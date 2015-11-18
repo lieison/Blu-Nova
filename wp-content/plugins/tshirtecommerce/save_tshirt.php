@@ -79,7 +79,7 @@ class LieisonTshirt {
         update_post_meta($post_id, '_edit_last', "1");
         update_post_meta($post_id, '_regular_price', "");
         update_post_meta($post_id, '_sale_price', "");
-        update_post_meta($post_id, '_product_image_gallery', "");
+        update_post_meta($post_id, '_product_image_gallery', $post['image']);
 
         update_post_meta($post_id, '_sku', $post['sku']);
 
@@ -89,7 +89,7 @@ class LieisonTshirt {
         update_post_meta($post_id, '_sale_price_dates_to', "");
 
 
-        update_post_meta($post_id, '_price', "");
+        update_post_meta($post_id, '_price', $post['price']);
         update_post_meta($post_id, '_sold_individually', "");
         update_post_meta($post_id, '_manage_stock', "no");
 
