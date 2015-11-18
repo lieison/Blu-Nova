@@ -22,7 +22,7 @@
 			<!-- start: product -->
 			<li <?php if($segments[0] == 'product') echo 'class="active open"' ?>>
 				<a href="javascript:void(0)"><i class="clip-t-shirt"></i>
-					<span class="title"> <?php lang('menu_left_products'); ?> </span><i class="icon-arrow"></i>
+					<span class="title"> <?php  lang('menu_left_products'); ?> </span><i class="icon-arrow"></i>
 					<span class="selected"></span>
 				</a>
 				<ul class="sub-menu">
@@ -52,7 +52,7 @@
 			<!-- end: clipart -->
 			
 			<!-- start: addons -->
-			<li <?php if($segments[0] == 'addon') echo 'class="active open"' ?>>
+                        <li style="display:none;" <?php if($segments[0] == 'addon') echo 'class="active open"' ?>>
 				<a href="javascript:void(0)"><i class="clip-puzzle-4"></i>
 					<span class="title"> <?php lang('menu_left_addons'); ?> </span><i class="icon-arrow"></i>
 					<span class="selected"></span>
@@ -102,7 +102,7 @@
 						</a>
 					</li>
 					
-					<li <?php if($segments[0] == 'settings' && isset($segments[1]) && ($segments[1] == 'languages' || $segments[1] == 'editlanguage')) echo 'class="active open"' ?>>
+					<li style="display:none;" <?php if($segments[0] == 'settings' && isset($segments[1]) && ($segments[1] == 'languages' || $segments[1] == 'editlanguage')) echo 'class="active open"' ?>>
 						<a href="<?php echo site_url_ci('index.php/settings/languages'); ?>">
 							<span class="title"><?php echo lang('menu_left_settings_language');?></span>
 						</a>

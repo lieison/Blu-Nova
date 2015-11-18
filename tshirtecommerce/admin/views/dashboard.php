@@ -52,7 +52,6 @@ if ( ! defined('ROOT')) exit('No direct script access allowed');
 			<h3>Lieison Tshirt Blu-Nova </h3>
 			<span>Power By Lieison S.A de C.V</span><br/>
 			<span>Website: </span> <a target="_blank" href="http://tshirtecommerce.com">http://es.lieison.com</a><br/>
-			
 		</div>
 	</div>
 </div>

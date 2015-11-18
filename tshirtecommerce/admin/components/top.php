@@ -11,7 +11,7 @@
 			
 			<!-- start: LOGO -->
 			<a class="navbar-brand" href="<?php echo site_url_ci();?>">
-				<img src="<?php echo site_url_ci('assets/images/logo.png'); ?>" alt="http://tshirtecommerce.com" />
+                            <img width="130" height="50" src="<?php echo site_url_ci('assets/images/logo.png'); ?>" alt="http://tshirtecommerce.com" />
 			</a>
 			<!-- end: LOGO -->
 		</div>

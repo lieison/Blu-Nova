@@ -182,6 +182,7 @@ var Main = function () {
     };
    //function to activate the 3rd and 4th level menus
     var runNavigationMenu = function () {
+        
         jQuery('.main-navigation-menu li.active').addClass('open');
         jQuery('.main-navigation-menu > li a').bind('click', function () {
             if (jQuery(this).parent().children('ul').hasClass('sub-menu') && (!jQuery('body').hasClass('navigation-small') || !jQuery(this).parent().parent().hasClass('main-navigation-menu'))) {

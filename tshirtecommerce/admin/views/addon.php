@@ -10,7 +10,7 @@
 if ( ! defined('ROOT')) exit('No direct script access allowed');
 
 ?>
-<div class="addons">
+<div style="" class="addons">
 	<?php
 		foreach($data['addons'] as $addon)
 		{

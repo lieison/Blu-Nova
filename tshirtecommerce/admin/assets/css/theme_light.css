@@ -29,7 +29,7 @@
 	display: inline-block;
 	text-align: center;
 	width: 1.25em;
-	color: #7bcd40 !important;
+	color: #243060 !important;
 	font-size: 12px;
 }
 .navbar-inverse .nav > li:hover > a, .navbar-inverse .nav > li:active > a {
@@ -52,7 +52,7 @@
 }
 
 .nav > li.dropdown .dropdown-toggle .badge {
-	background-color: #7bcd40;
+	background-color: #243060;
 	border: none;
 }
 .navbar-toggle {
@@ -74,16 +74,16 @@ ul.main-navigation-menu > li a {
 	color: #555555;
 }
 ul.main-navigation-menu > li a > i {
-	color: #7bcd40;
+	color: #243060;
 	font-weight: normal;
 }
 ul.main-navigation-menu > li.active > a {
-	background: #7bcd40 !important;
+	background: #243060 !important;
 	border-top: none !important;
 	color: #fff;
 }
 ul.main-navigation-menu > li.active > a .selected:before {
-	color: #7bcd40 !important;
+	color: #243060 !important;
 }
 ul.main-navigation-menu > li.active > a i {
 	color: #fff;

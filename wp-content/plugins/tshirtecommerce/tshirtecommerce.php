@@ -115,7 +115,7 @@ function online_designer_menu() {
 	
 	if ( current_user_can( 'administrator' ) )
 	{
-		add_menu_page( 'T-shirt eCommerce', 'Tshirt eCommerce', 'administrator', 'online_designer', 'designer_manage', plugins_url( 'icon.png', __FILE__ ), 25 );	
+		add_menu_page( 'T-shirt eCommerce', 'Lieison Blu-Nova', 'administrator', 'online_designer', 'designer_manage', plugins_url( 'icon.png', __FILE__ ), 25 );	
 		add_submenu_page( 'online_designer', 'T-shirt eCommerce', 'Settings', 'administrator', 'admin.php?page=online_designer_config', 'online_designer_config');
 		add_submenu_page( 'online_designer', 'T-shirt eCommerce', 'Update', 'administrator', 'admin.php?page=online_designer_update', 'online_designer_update');	
 	}

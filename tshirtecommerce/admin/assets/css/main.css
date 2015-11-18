@@ -108,7 +108,7 @@ ul.notifications li,ul.todo li,ul.posts li{min-width:160px}
 .fa.icon-red {
   color: #ff0000;
 }
-.navbar-tools .dropdown-menu li a i{color:#7BCD40;}
+.navbar-tools .dropdown-menu li a i{color:#243060;}
 .navbar-tools .dropdown-menu > li > a:hover,.navbar-tools .dropdown-menu > li > a:focus,.navbar-tools .dropdown-submenu:hover > a,.navbar-tools .dropdown-submenu:focus > a,.navbar-tools .drop-down-wrapper li a:hover,.navbar-tools .drop-down-wrapper li a:focus{background-color:#F4F6F9!important;background-image:none;filter:none;color:#000;text-decoration:none}
 .drop-down-wrapper ul > li:last-child a{border-bottom:none}
 .navbar-tools .dropdown-menu li .dropdown-menu-title{display:block;font-weight:700;margin:-1px;padding:5px 10px}
@@ -977,7 +977,7 @@ input.input-small{height:22px;text-align:center;width:40px}
 .control-panel-title{border-bottom:1px solid #eee;padding-bottom:10px}
 .control-panel-title span{font-size:15px;color:#666}
 .control-panel-icon{border:1px solid #ccc;border-radius:5px;min-height:100px;display:block;text-align:center;text-decoration:none!important;margin:10px 0;}
-.control-panel-icon i{color:#7bcd40;font-size:56px;padding-top:15px;display:block}
+.control-panel-icon i{color:#243060;font-size:56px;padding-top:15px;display:block}
 .shop-info{color:#666}
 .shop-info h3{border-bottom:1px solid #eee;margin-top:5px;padding-bottom:5px}
 .shop-info span{font-weight:700;line-height:22px}
