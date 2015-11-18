@@ -140,7 +140,7 @@ class Controllers
 		ob_end_clean();
 		
 		if (empty($data['title']))
-			$title = 'T-Shirt eCommerce';
+			$title = 'Lieison';
 		else
 			$title = $data['title'];
 		

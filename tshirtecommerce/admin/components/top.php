@@ -11,14 +11,14 @@
 			
 			<!-- start: LOGO -->
 			<a class="navbar-brand" href="<?php echo site_url_ci();?>">
-                            <img width="130" height="50" src="<?php echo site_url_ci('assets/images/logo.png'); ?>" alt="http://tshirtecommerce.com" />
+                            <img width="130"  src="<?php echo site_url_ci('assets/images/logo.png'); ?>" alt="http://tshirtecommerce.com" />
 			</a>
 			<!-- end: LOGO -->
 		</div>
 		
 		<div class="navbar-tools">
 			<ul class="nav navbar-right">						
-				<li class="dropdown">
+                            <li style="display:none;" class="dropdown">
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 						<i class="fa fa-life-ring fa-lg"></i>						
 					</a>

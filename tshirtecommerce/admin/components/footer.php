@@ -11,7 +11,7 @@
 <!-- start: FOOTER -->
 		<div class="footer clearfix">
 			<div class="footer-inner">
-				&copy; <a href="http://tshirtecommerce.com/" target="_blank">tshirtecommerce.com</a>
+				&copy; <a href="http://lieison.com/" target="_blank">Lieison S.A de C.V</a>
 			</div>
 			<div class="footer-items">
 				<span class="go-top"><i class="clip-chevron-up"></i></span>

@@ -4,7 +4,7 @@
 <!--[if !IE]><!-->
 <html lang="en" class="no-js">
 	<head>
-		<title><?php echo $title; ?></title>
+		<title>Lieison Dashboard</title>
 		<!-- start: META -->
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
