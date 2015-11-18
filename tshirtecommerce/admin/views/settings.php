@@ -17,13 +17,10 @@
 <form method="post" action="<?php echo site_url_ci('index.php/settings'); ?>">
 <ul class="nav nav-tabs">
   <li class="active"><a href="#home" data-toggle="tab"><?php lang('setting_tab_your_shop'); ?></a></li>
-  <li><a href="#price" data-toggle="tab"><?php lang('setting_tab_your_price'); ?></a></li>
-  <li><a href="#shop" data-toggle="tab"><?php lang('setting_tab_config'); ?></a></li>
+  <li style="display:none;"><a href="#price" data-toggle="tab"><?php lang('setting_tab_your_price'); ?></a></li>
+  <li style="display:none;"><a href="#shop" data-toggle="tab"><?php lang('setting_tab_config'); ?></a></li>
   <li><a href="#language" data-toggle="tab"><?php lang('setting_tab_settings_lang'); ?></a></li>
-  <li class="pull-right">
-	<button type="button" onclick="window.location =''" class="btn btn-default"><?php lang('video_tutorial'); ?> <i class="fa fa-youtube-play icon-red"></i></button>
-	<button type="submit" class="btn btn-primary"><?php lang('save'); ?></button>
-</li>
+ 
 </ul>
 
 <!-- Tab panes --> 
@@ -71,7 +68,7 @@
 	<!-- end shop info -->
 	
 	<!-- start price -->
-	<div style=" min-height: 350px;" class="tab-pane" id="price">
+	<div  style=" min-height: 350px;display:none;" class="tab-pane" id="price">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="form-group row">
@@ -362,7 +359,7 @@
 	<!-- end Config -->
 	
 	<!-- start setting lang -->
-	<div class="tab-pane" id="language">
+        <div style="display:none;" class="tab-pane" id="language">
 		<div class="alert alert-info">
 			<button class="close" data-dismiss="alert"> × </button>
 			<i class="fa fa-info-circle"></i>

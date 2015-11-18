@@ -91,7 +91,7 @@ tinymce.init({
 					</a>
 				</li>
 				<li class="pull-right">
-					<button type="button" onclick="window.open('https://www.youtube.com/watch?v=SejKQ_A6XSg','_blank')" class="btn btn-default"><?php lang('video_tutorial'); ?> <i class="fa fa-youtube-play icon-red"></i></button>
+					
 					<button type="submit" onclick="return saveProduct(this);" class="btn btn-primary"><i class="glyphicon glyphicon-floppy-save"></i> <?php lang('save'); ?></button>
 					<button type="button" onclick="window.location ='<?php echo site_url_ci("index.php/product"); ?>'" class="btn btn-danger"><?php lang('close'); ?></button>
 				</li>

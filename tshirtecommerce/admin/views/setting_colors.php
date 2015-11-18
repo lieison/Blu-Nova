@@ -68,7 +68,7 @@
 		</div>
 		<div class="col-md-6">
 			<p style="text-align:right;">
-				<a href="https://www.youtube.com/watch?v=UAy0S5MT6u4" class="btn btn-default" target="_blank"><?php lang('video_tutorial'); ?> <i class="fa fa-youtube-play icon-red"></i></a>
+				
 				<a class="btn btn-primary tooltips" title="<?php echo lang('add'); ?>" href="javascript:;" onclick="UIModals.init('<?php echo site_url_ci('index.php/settings/editcolor'); ?>')">
 					<i class="glyphicon glyphicon-plus"></i>
 				</a>

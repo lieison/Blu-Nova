@@ -18,13 +18,10 @@
 <form method="post" action="<?php echo site_url_ci('index.php/settings'); ?>">
 <ul class="nav nav-tabs">
   <li class="active"><a href="#home" data-toggle="tab"><?php lang('setting_tab_your_shop'); ?></a></li>
-  <li><a href="#price" data-toggle="tab"><?php lang('setting_tab_your_price'); ?></a></li>
-  <li><a href="#shop" data-toggle="tab"><?php lang('setting_tab_config'); ?></a></li>
-  <li><a href="#language" data-toggle="tab"><?php lang('setting_tab_settings_lang'); ?></a></li>
-  <li class="pull-right">
-	<button type="button" onclick="window.open('https://www.youtube.com/watch?v=6wr0dlCAweU','_blank');" class="btn btn-default"><?php lang('video_tutorial'); ?> <i class="fa fa-youtube-play icon-red"></i></button>
-	<button type="submit" class="btn btn-primary"><?php lang('save'); ?></button>
-</li>
+  <li style="display:none;" ><a href="#price" data-toggle="tab"><?php lang('setting_tab_your_price'); ?></a></li>
+  <li ><a href="#shop" data-toggle="tab"><?php lang('setting_tab_config'); ?></a></li>
+  <li ><a href="#language" data-toggle="tab"><?php lang('setting_tab_settings_lang'); ?></a></li>
+
 </ul>
 
 <!-- Tab panes --> 

@@ -60,7 +60,7 @@ $css = '';
 		</div>
 		<div class="col-md-6">
 			<p style="text-align:right;">
-				<a href="https://www.youtube.com/watch?v=CeYebHfUh5U" target="_blank" class="btn btn-default"><?php lang('video_tutorial'); ?> <i class="fa fa-youtube-play icon-red"></i></a>
+				
 				<a class="btn btn-primary tooltips" href="<?php echo site_url_ci('index.php/settings/addgooglefont')?>" data-placement="top" data-original-title="<?php lang('fonts_add_google'); ?>">
 					<i class="glyphicon glyphicon-plus"></i> <?php echo lang('fonts_add_google_font'); ?>
 				</a>

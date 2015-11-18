@@ -26,10 +26,7 @@
 		</div>
 		
 		<div class="col-md-6 pull-right">			
-			<h4>
-				<?php lang('addons_title'); ?>
-				<a href="https://www.youtube.com/watch?v=7bQ26MpjBFw" target="_blank" class="btn btn-default btn-sm pull-right"><?php lang('video_tutorial'); ?> <i class="fa fa-youtube-play icon-red"></i></a>
-			</h4>
+			
 			<hr />
 			<div class="text-muted"><?php lang('addons_install_description'); ?></div>
 			<br />
