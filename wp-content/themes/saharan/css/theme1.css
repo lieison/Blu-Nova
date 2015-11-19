@@ -7466,9 +7466,6 @@ body.error404 .form404-wrapper a:hover {
 .main-container .home-tabs .wpb_content_element .wpb_wrapper >h3 {
   display: none;
 }
-.main-container .home-tabs .slick-slider button {
-  display: none !important;
-}
 .main-container .home-tabs .home-tabs-title {
   float: left;
   width: 100%;

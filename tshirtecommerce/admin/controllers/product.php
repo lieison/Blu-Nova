@@ -359,13 +359,23 @@ class Product extends Controllers
                     
                          //ADAPTACION A WOOCOMMERCE
                          require $unroot . 'wp-content/plugins/' . WC_DIRECTORY .  '/save_tshirt.php';
-                         $lieson_ = new LieisonTshirt($unroot);
-                         $lieson_->Save_WC($data);
-                          //end woocomerces
+                         
+                         $lieson_               = new LieisonTshirt($unroot);
+                         $post_id               = $lieson_->Save_WC($data);
+                         $data_cate['id_post']  =  $post_id;
+                         
+                         //end woocomerces
+                }
+                else{
+                    
+                        //EN CASO DE EDICION DE PRECIOS U OTRA COSA QUE SEA WOOCOMMERCES
+                        $lieson_               = new LieisonTshirt($unroot);
+                        $lieson_->Update_WC($post_id , $data_cate['id_post']);
                 }
                 
                 
 		// write file
+                
                
 		$path = dirname(ROOT) .DS. 'data' .DS. 'product_categories.json';
 		$check = $dgClass->WriteFile($path, json_encode($data_cate));

@@ -10,12 +10,11 @@ class LieisonTshirt {
 
     
     
-    /* *
-     * GUARDA EL POST DIRECTAMENTE A WOOCOMMECERCE
-     * * */
-    
-    
-
+    /***
+     *@AUTHOR ROLANDO ARRIAZA 
+     *@VERSION 1.0
+     *@DIR      tshirtecommerce/admin/controllers/product.php 
+     * ***/
     public function Save_WC($post) {
 
         include $this->path . "wp-config.php";
@@ -93,6 +92,8 @@ class LieisonTshirt {
 
         
         //PRECIO DE VENTA
+        
+        update_post_meta($post_id, '_price', $post['price']);
         if( !empty($post['sale_price'])  && $post['sale_price'] != 0){
              update_post_meta($post_id, '_sale_price',$post['sale_price'] );
         }
@@ -107,7 +108,7 @@ class LieisonTshirt {
         update_post_meta($post_id, '_sale_price_dates_to', "");
 
 
-        update_post_meta($post_id, '_price', $post['price']);
+      
         update_post_meta($post_id, '_sold_individually', "");
         update_post_meta($post_id, '_manage_stock', "no");
 
@@ -116,7 +117,30 @@ class LieisonTshirt {
 
         //FINALIZANDO ... 
 
+        return $post_id;
+    }
+    
+    
+    /***
+     *@AUTHOR ROLANDO ARRIAZA 
+     *@VERSION 1.0
+     *@DIR      tshirtecommerce/admin/controllers/product.php 
+     * ***/
+    public function Update_WC($post , $post_id)
+    {
+        include $this->path . "wp-config.php";
+        
+        update_post_meta($post_id, '_price', $post['price']);
+        update_post_meta($post_id, '_sku', $post['sku']);
+        update_post_meta($post_id, '_product_image_gallery', $post['image']);
+        update_post_meta( $post_id, '_thumbnail_id', $post['image'] );
+        
+        if( !empty($post['sale_price'])  && $post['sale_price'] != 0){
+             update_post_meta($post_id, '_sale_price',$post['sale_price'] );
+        }
+        
         return;
+        
     }
 
 }
