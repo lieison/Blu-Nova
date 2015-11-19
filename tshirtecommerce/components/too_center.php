@@ -105,5 +105,7 @@ $addons = $GLOBALS['addons'];
 		</div>
 	</div>
 	
+        <!-- OCULTA thumbnails -->
 	<div style="display:none;" class="" id="product-thumbs"></div>
+        <!-- -->
 </div>
