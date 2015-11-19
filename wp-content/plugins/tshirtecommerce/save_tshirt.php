@@ -22,13 +22,13 @@ class LieisonTshirt {
 
 
         $post_data = array(
-            'post_author' => $user_id,
-            'post_content' => $post['description'],
-            'post_status' => "publish",
-            'post_title' => $post['title'],
-            'post_parent' => '',
-            'post_type' => "product",
-            'post_excerpt' => ""
+            'post_author'           => $user_id,
+            'post_content'          => $post['description'],
+            'post_status'           => "publish",
+            'post_title'            => $post['title'],
+            'post_parent'           => '',
+            'post_type'             => "product",
+            'post_excerpt'          => ""
         );
 
 
@@ -80,6 +80,10 @@ class LieisonTshirt {
         update_post_meta($post_id, '_regular_price', "");
         update_post_meta($post_id, '_sale_price', "");
         update_post_meta($post_id, '_product_image_gallery', $post['image']);
+        update_post_meta( $post_id, '_thumbnail_id', $post['image'] );
+
+
+        
 
         update_post_meta($post_id, '_sku', $post['sku']);
 
