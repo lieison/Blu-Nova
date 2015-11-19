@@ -233,6 +233,8 @@ class Product extends Controllers
                 $the_new                                = false;
                 
 		// get id
+                
+                $id         = null;
              
 		if ($data['id'] == 0)
 		{
@@ -271,6 +273,7 @@ class Product extends Controllers
 					else
 					{
 						$content['products'][] = $product;
+                                               
 					}
 				}
 			}
@@ -283,7 +286,45 @@ class Product extends Controllers
                         
 		}
                 
+                
+                
+                  
+                if($the_new){
+                    
+                    
+                       
+                
+                         //ADAPTACION A WOOCOMMERCE
+                         require $unroot . 'wp-content/plugins/' . WC_DIRECTORY .  '/save_tshirt.php';
+                         
+                        $lieson_                                       = new LieisonTshirt($unroot);
+                        $post_id                                       = $lieson_->Save_WC($data);
+                        $count                                         = count($content['products']) -1 ;
+                        $content['products'][$count]['id_post']        = isset($post_id) ? $post_id : 0;
+                         
+                       
+                      
+                         //end woocomerces
+                }
+                else{
+                    
+                        $dgs = new dg();
+                        $id_post = null;
+                        
+                        
+                        foreach ($dgs->getProducts() as $v){
+                            if($v->id == $data['id']){
+                                $id_post = $v->id_post;
+                            }
+                        }
 
+                        require $unroot . 'wp-content/plugins/' . WC_DIRECTORY .  '/save_tshirt.php';
+                        //EN CASO DE EDICION DE PRECIOS U OTRA COSA QUE SEA WOOCOMMERCES
+                        $lieson_               = new LieisonTshirt($unroot);
+                        $lieson_->Update_WC($data, $id_post);
+                }
+                
+                
 		
 		$content = str_replace('\\\\', '', json_encode($content));
 		
@@ -354,25 +395,7 @@ class Product extends Controllers
                 
 
                 
-                
-                if($the_new){
-                    
-                         //ADAPTACION A WOOCOMMERCE
-                         require $unroot . 'wp-content/plugins/' . WC_DIRECTORY .  '/save_tshirt.php';
-                         
-                         $lieson_               = new LieisonTshirt($unroot);
-                         $post_id               = $lieson_->Save_WC($data);
-                         $data_cate['id_post']  =  $post_id;
-                         
-                         //end woocomerces
-                }
-                else{
-                    
-                        //EN CASO DE EDICION DE PRECIOS U OTRA COSA QUE SEA WOOCOMMERCES
-                        $lieson_               = new LieisonTshirt($unroot);
-                        $lieson_->Update_WC($post_id , $data_cate['id_post']);
-                }
-                
+              
                 
 		// write file
                 
@@ -544,8 +567,9 @@ class Product extends Controllers
 		//get data product.
 		$dgClass 				= new dg();
 		$products 				= $dgClass->getProducts();
-		$categories 			= $dgClass->getProductCategories();
+		$categories                             = $dgClass->getProductCategories();
 		
+                
 		//get id products
 		if(isset($_POST['ids']) && $_POST['ids'] != '')
 		{
@@ -558,6 +582,8 @@ class Product extends Controllers
 			else
 				$ids = array();
 		}
+                
+                
 		
 		if (count($ids) > 0)
 		{	
@@ -573,6 +599,8 @@ class Product extends Controllers
 					}
 				}
 			}
+                        
+                      
 			
 			$content = json_encode($content);
 			
@@ -596,6 +624,13 @@ class Product extends Controllers
 				$dgClass->WriteFile($path, $category_data);
 			}
 		}
+                
+                
+               /* $unroot = str_replace(UNROOT, "", ROOT );
+                require $unroot . 'wp-content/plugins/' . WC_DIRECTORY .  '/save_tshirt.php';
+                $lieson     = new LieisonTshirt($unroot);
+                $lieson->Delete_WC($category_data['post_id']);*/
+                
 		
 		$dgClass->redirect('index.php/product');
 	}
