@@ -1,0 +1,52 @@
+/* menu-edit */
+.menu-edit .bootstrap .option.row 
+{
+	margin-right: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+} 
+.menu-edit .bootstrap .option.row > * 
+{
+	width: 100%;
+}
+.menu-edit .bootstrap .option.row .h_separator 
+{
+	display: none;
+	margin: 0px;
+
+}
+.menu-edit .bootstrap .option.row .option_header .caption 
+{
+	text-align: center;
+}
+.menu-edit .bootstrap .option.row .option_header .descr 
+{
+	opacity: 1;
+}
+.menu-edit .bootstrap .option.row .option_field .mm_checkbox,
+.menu-edit .bootstrap .option.row .option_field .radio
+{
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.menu-edit .bootstrap .option.row .option_header .descr,  
+.menu-edit .bootstrap .option.row .option_field label 
+{
+	font-size: 12px;
+	font-style: italic;
+	font-family: sans-serif;
+}
+.menu-edit .bootstrap .option.row[class*="pull_to_other_side"],
+.menu-edit .bootstrap .option.row[class*="submenu_enable_full_width"]
+{
+	display: none;
+	visibility: hidden;
+}
+.menu-edit .menu-item-depth-0 .bootstrap .option.row[class*="pull_to_other_side"],
+.menu-edit .menu-item-depth-0 .bootstrap .option.row[class*="submenu_enable_full_width"]
+{
+	display: block;
+	visibility: visible;
+}

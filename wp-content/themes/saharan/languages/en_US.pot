@@ -1,0 +1,2682 @@
+# Copyright (C) 2014 the WordPress team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Saharan 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/roadthemes\n"
+"POT-Creation-Date: 2015-11-16 14:57+0700\n"
+"PO-Revision-Date: 2015-11-16 14:57+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-KeywordsList: _e;_n;__;_x;_ex;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../saharan/404.php:15
+msgid "Oops ! That Page Can't Be Found."
+msgstr ""
+
+#: ../saharan/404.php:22
+msgid "The page you are looking for is not found!"
+msgstr ""
+
+#: ../saharan/404.php:23
+msgid "Back to homepage"
+msgstr ""
+
+#: ../saharan/archive.php:61 ../saharan/author.php:55
+#: ../saharan/category.php:55 ../saharan/image.php:52 ../saharan/index.php:59
+#: ../saharan/search.php:51 ../saharan/single.php:25 ../saharan/tag.php:55
+#: ../saharan/theme-config.php:879
+msgid "Blog"
+msgstr ""
+
+#: ../saharan/archive.php:76 ../twentyfourteen/archive.php:31
+#: ../twentythirteen/archive.php:29
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../saharan/archive.php:78 ../twentyfourteen/archive.php:34
+#: ../twentythirteen/archive.php:31
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../saharan/archive.php:78 ../twentyfourteen/archive.php:34
+#: ../twentythirteen/archive.php:31
+msgid "F Y"
+msgstr ""
+
+#: ../saharan/archive.php:80 ../twentyfourteen/archive.php:37
+#: ../twentythirteen/archive.php:33
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../saharan/archive.php:80 ../twentyfourteen/archive.php:37
+#: ../twentythirteen/archive.php:33
+msgid "Y"
+msgstr ""
+
+#: ../saharan/archive.php:82 ../twentyfourteen/archive.php:40
+#: ../twentyfourteen/taxonomy-post_format.php:51
+#: ../twentythirteen/archive.php:35
+msgid "Archives"
+msgstr ""
+
+#: ../saharan/author.php:76
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: ../saharan/author.php:105 ../twentythirteen/author-bio.php:26
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../saharan/category.php:68 ../twentyfourteen/category.php:20
+#: ../twentythirteen/category.php:19
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:333
+#: ../saharan/functions.php:1145
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:334
+#: ../saharan/functions.php:1146
+msgid "Install Plugins"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:335
+#: ../saharan/functions.php:1147
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:336
+#: ../saharan/functions.php:1148
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:397
+#: ../saharan/functions.php:1159
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:399
+#: ../saharan/class-tgm-plugin-activation.php:3029
+#: ../saharan/functions.php:1160
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:400
+#: ../saharan/class-tgm-plugin-activation.php:2832
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:635
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:828
+#: ../saharan/class-tgm-plugin-activation.php:3438
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:935
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:935
+#: ../saharan/class-tgm-plugin-activation.php:938
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:938
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:1881
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2235
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2283
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2286
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2289
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2371
+msgid "unknown"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2443
+#: ../saharan/woocommerce/myaccount/my-orders.php:34
+#: ../saharan/woocommerce/myaccount/my-orders.php:55
+msgid "Status"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2491
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2495
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2500
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2570
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:2814
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3370
+#: ../saharan/class-tgm-plugin-activation.php:3376
+msgid "Show Details"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3370
+#: ../saharan/class-tgm-plugin-activation.php:3376
+msgid "Hide Details"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3376
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../saharan/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../saharan/comments.php:31 ../saharan/functions.php:955
+msgid "1 comment"
+msgstr ""
+
+#: ../saharan/comments.php:51 ../twentyfifteen/comments.php:53
+#: ../twentyfourteen/comments.php:59 ../twentythirteen/comments.php:52
+msgid "Comments are closed."
+msgstr ""
+
+#: ../saharan/content-audio.php:60 ../saharan/content-gallery.php:48
+#: ../saharan/content-image.php:54 ../saharan/content-video.php:46
+#: ../saharan/content.php:54 ../twentyfourteen/inc/widgets.php:127
+#: ../twentyfourteen/inc/widgets.php:172
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../saharan/content-audio.php:61 ../saharan/content-gallery.php:49
+#: ../saharan/content-image.php:55 ../saharan/content-page.php:20
+#: ../saharan/content-video.php:47 ../saharan/content.php:55
+#: ../saharan/image.php:120 ../saharan/page-templates/contact-page.php:127
+#: ../twentyfifteen/content-link.php:36 ../twentyfifteen/content-page.php:25
+#: ../twentyfifteen/content.php:38 ../twentyfifteen/image.php:59
+#: ../twentyfourteen/content-aside.php:53
+#: ../twentyfourteen/content-audio.php:53
+#: ../twentyfourteen/content-gallery.php:53
+#: ../twentyfourteen/content-image.php:53
+#: ../twentyfourteen/content-link.php:53 ../twentyfourteen/content-page.php:22
+#: ../twentyfourteen/content-quote.php:53
+#: ../twentyfourteen/content-video.php:53 ../twentyfourteen/content.php:61
+#: ../twentyfourteen/image.php:54 ../twentythirteen/content-aside.php:20
+#: ../twentythirteen/content-audio.php:31
+#: ../twentythirteen/content-chat.php:30
+#: ../twentythirteen/content-gallery.php:31
+#: ../twentythirteen/content-image.php:30
+#: ../twentythirteen/content-link.php:31
+#: ../twentythirteen/content-quote.php:20
+#: ../twentythirteen/content-status.php:20
+#: ../twentythirteen/content-video.php:30 ../twentythirteen/content.php:48
+#: ../twentythirteen/image.php:70 ../twentythirteen/page.php:35
+msgid "Pages:"
+msgstr ""
+
+#: ../saharan/content-audio.php:68 ../saharan/content-gallery.php:56
+#: ../saharan/content-image.php:61 ../saharan/content-video.php:54
+#: ../saharan/content.php:61
+msgid "Read more"
+msgstr ""
+
+#: ../saharan/content-audio.php:85 ../saharan/content-gallery.php:73
+#: ../saharan/content-image.php:80 ../saharan/content-video.php:71
+#: ../saharan/content.php:80
+msgid "About the Author: <a href=\""
+msgstr ""
+
+#: ../saharan/content-none.php:13 ../saharan/index.php:101
+#: ../saharan/search.php:81 ../twentyfifteen/content-none.php:15
+#: ../twentyfourteen/content-none.php:12 ../twentythirteen/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: ../saharan/content-none.php:17 ../saharan/index.php:105
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: ../saharan/content-page.php:23 ../saharan/functions.php:925
+#: ../saharan/image.php:147 ../saharan/page-templates/contact-page.php:130
+#: ../saharan/woocommerce/myaccount/my-address.php:45
+#: ../twentyfifteen/content-link.php:56 ../twentyfifteen/content-page.php:35
+#: ../twentyfifteen/content-search.php:28
+#: ../twentyfifteen/content-search.php:33 ../twentyfifteen/content.php:57
+#: ../twentyfifteen/image.php:71 ../twentyfourteen/content-aside.php:40
+#: ../twentyfourteen/content-audio.php:40
+#: ../twentyfourteen/content-gallery.php:40
+#: ../twentyfourteen/content-image.php:40
+#: ../twentyfourteen/content-link.php:40 ../twentyfourteen/content-page.php:28
+#: ../twentyfourteen/content-quote.php:40
+#: ../twentyfourteen/content-video.php:40 ../twentyfourteen/content.php:42
+#: ../twentyfourteen/image.php:34
+#: ../twentyfourteen/page-templates/contributors.php:35
+#: ../twentythirteen/content-aside.php:27
+#: ../twentythirteen/content-aside.php:35
+#: ../twentythirteen/content-audio.php:38
+#: ../twentythirteen/content-chat.php:36
+#: ../twentythirteen/content-gallery.php:46
+#: ../twentythirteen/content-image.php:42
+#: ../twentythirteen/content-link.php:19
+#: ../twentythirteen/content-quote.php:32
+#: ../twentythirteen/content-status.php:26
+#: ../twentythirteen/content-video.php:42 ../twentythirteen/content.php:31
+#: ../twentythirteen/image.php:44 ../twentythirteen/page.php:39
+msgid "Edit"
+msgstr ""
+
+#: ../saharan/footer.php:41
+msgid "Follow Us"
+msgstr ""
+
+#: ../saharan/functions.php:123 ../saharan/functions.php:136
+#: ../saharan/functions.php:142 ../saharan/functions.php:146
+msgid "Search product..."
+msgstr ""
+
+#: ../saharan/functions.php:160 ../saharan/functions.php:173
+#: ../saharan/functions.php:179 ../saharan/functions.php:183
+msgid "Search..."
+msgstr ""
+
+#: ../saharan/functions.php:335 ../twentyfifteen/functions.php:85
+#: ../twentyfourteen/header.php:52
+msgid "Primary Menu"
+msgstr ""
+
+#: ../saharan/functions.php:336
+msgid "Mobile Menu"
+msgstr ""
+
+#: ../saharan/functions.php:545
+msgid "Blog Sidebar"
+msgstr ""
+
+#: ../saharan/functions.php:547
+msgid "Sidebar on blog page"
+msgstr ""
+
+#: ../saharan/functions.php:555
+msgid "Category Sidebar"
+msgstr ""
+
+#: ../saharan/functions.php:557
+msgid "Sidebar on product category page"
+msgstr ""
+
+#: ../saharan/functions.php:565
+msgid "Product Sidebar"
+msgstr ""
+
+#: ../saharan/functions.php:567
+msgid "Sidebar on product details page"
+msgstr ""
+
+#: ../saharan/functions.php:575
+msgid "Pages Sidebar"
+msgstr ""
+
+#: ../saharan/functions.php:577
+msgid "Sidebar on content pages"
+msgstr ""
+
+#: ../saharan/functions.php:600
+msgid ""
+"This content will be used to replace the featured image, use shortcode here"
+msgstr ""
+
+#: ../saharan/functions.php:611
+msgid "Post featured content"
+msgstr ""
+
+#: ../saharan/functions.php:812 ../twentyfifteen/functions.php:161
+#: ../twentyfifteen/functions.php:169 ../twentyfifteen/functions.php:177
+#: ../twentyfourteen/functions.php:213 ../twentythirteen/functions.php:128
+#: ../twentythirteen/functions.php:134
+msgid "on"
+msgstr ""
+
+#: ../saharan/functions.php:818 ../twentyfifteen/functions.php:185
+msgid "no-subset"
+msgstr ""
+
+#: ../saharan/functions.php:849 ../saharan/single.php:42
+#: ../twentyfourteen/inc/template-tags.php:85
+#: ../twentythirteen/functions.php:300
+msgid "Post navigation"
+msgstr ""
+
+#: ../saharan/functions.php:850 ../twentythirteen/functions.php:270
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../saharan/functions.php:851 ../twentythirteen/functions.php:274
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../saharan/functions.php:866 ../twentyfifteen/single.php:36
+#: ../twentyfourteen/functions.php:258
+msgid "Previous"
+msgstr ""
+
+#: ../saharan/functions.php:867 ../twentyfifteen/single.php:33
+#: ../twentyfourteen/functions.php:259
+msgid "Next"
+msgstr ""
+
+#: ../saharan/functions.php:888
+msgid "Pingback:"
+msgstr ""
+
+#: ../saharan/functions.php:888
+msgid "(Edit)"
+msgstr ""
+
+#: ../saharan/functions.php:907
+msgid "Post author"
+msgstr ""
+
+#: ../saharan/functions.php:912
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../saharan/functions.php:916
+msgid "Reply"
+msgstr ""
+
+#: ../saharan/functions.php:920
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../saharan/functions.php:945 ../twentyfifteen/inc/template-tags.php:91
+#: ../twentyfifteen/inc/template-tags.php:99
+#: ../twentyfourteen/content-aside.php:17
+#: ../twentyfourteen/content-audio.php:17
+#: ../twentyfourteen/content-featured-post.php:28
+#: ../twentyfourteen/content-gallery.php:17
+#: ../twentyfourteen/content-image.php:17
+#: ../twentyfourteen/content-link.php:17
+#: ../twentyfourteen/content-quote.php:17
+#: ../twentyfourteen/content-video.php:17 ../twentyfourteen/content.php:19
+#: ../twentythirteen/functions.php:328 ../twentythirteen/functions.php:334
+msgid ", "
+msgstr ""
+
+#: ../saharan/functions.php:951
+msgid "0 comments"
+msgstr ""
+
+#: ../saharan/functions.php:953 ../saharan/functions.php:1005
+msgid " comments"
+msgstr ""
+
+#: ../saharan/functions.php:964 ../saharan/functions.php:980
+#: ../twentyfifteen/author-bio.php:34 ../twentythirteen/functions.php:343
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../saharan/functions.php:968
+#, php-format
+msgid "Posted by %1$s %2$s %3$s"
+msgstr ""
+
+#: ../saharan/functions.php:984
+#, php-format
+msgid "<i class=\"fa fa-clock-o\"></i>%1$s / Posted by %2$s"
+msgstr ""
+
+#: ../saharan/functions.php:1003
+msgid "<span>0</span> comments"
+msgstr ""
+
+#: ../saharan/functions.php:1007
+msgid "<span>1</span> comment"
+msgstr ""
+
+#: ../saharan/functions.php:1012
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: ../saharan/functions.php:1161
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../saharan/image.php:136
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>."
+msgstr ""
+
+#: ../saharan/image.php:157 ../twentyfourteen/inc/template-tags.php:50
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../saharan/image.php:158 ../twentyfourteen/inc/template-tags.php:51
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:8
+msgid "Road Widgets"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:11
+msgid "Display recent posts, comments, popular posts"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:120
+msgid "says"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:159
+#: ../twentyfourteen/inc/widgets.php:255
+msgid "Title:"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:163
+msgid "Amount:"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:167
+msgid "Widget Type:"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:169
+msgid "Recent Posts"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:170
+msgid "Popular Posts"
+msgstr ""
+
+#: ../saharan/include/roadwidgets.php:171
+msgid "Recent Comments"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:9
+msgid "Popular categories"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:12 ../saharan/include/shortcodes.php:38
+#: ../saharan/include/shortcodes.php:49 ../saharan/include/shortcodes.php:60
+#: ../saharan/include/shortcodes.php:97 ../saharan/include/shortcodes.php:123
+#: ../saharan/include/shortcodes.php:131 ../saharan/include/shortcodes.php:141
+msgid "saharan"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:18
+msgid "Category slug"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:20 ../saharan/include/shortcodes.php:28
+msgid "clothes"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:26
+msgid "Image path"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:35 ../saharan/theme-config.php:642
+msgid "Brand Logos"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:46 ../saharan/theme-config.php:950
+msgid "Contact Map"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:57
+msgid "Latest posts"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:66
+msgid "Number of posts"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:68
+msgid "5"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:74
+msgid "Image scale"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:85
+msgid "Excerpt length"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:87
+msgid "20"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:94
+msgid "Testimonials"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:103
+msgid "Number of testimonial"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:105
+msgid "10"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:111
+msgid "Image size"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:113
+msgid "120"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:120
+msgid "Rotating tweets"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:129
+msgid "Twitter user name"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:138 ../saharan/include/shortcodes.php:147
+msgid "FontAwesome Icon"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:148
+msgid ""
+"<a href=\"http://fortawesome.github.io/Font-Awesome/cheatsheet/\" target="
+"\"_blank\">Go here</a> to get icon class. Example: fa-search"
+msgstr ""
+
+#: ../saharan/include/shortcodes.php:150
+msgid "fa-search"
+msgstr ""
+
+#: ../saharan/include/wooajax.php:112
+#: ../saharan/woocommerce/cart/mini-cart.php:23
+#, php-format
+msgid "%d"
+msgstr ""
+
+#: ../saharan/include/wooajax.php:129
+msgid "Product is added to cart"
+msgstr ""
+
+#: ../saharan/include/wooajax.php:148
+#: ../saharan/woocommerce/cart/mini-cart.php:78
+msgid "View Cart"
+msgstr ""
+
+#: ../saharan/index.php:90
+msgid "No posts to display"
+msgstr ""
+
+#: ../saharan/index.php:94
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: ../saharan/projects/archive-project.php:19
+#: ../saharan/projects/content-single-project.php:18
+msgid "Portfolio"
+msgstr ""
+
+#: ../saharan/projects/archive-project.php:72
+msgid "All"
+msgstr ""
+
+#: ../saharan/search.php:65 ../twentyfifteen/search.php:18
+#: ../twentyfourteen/search.php:18 ../twentythirteen/search.php:18
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../saharan/search.php:85
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../saharan/single.php:43
+msgid "&larr;"
+msgstr ""
+
+#: ../saharan/single.php:44
+msgid "&rarr;"
+msgstr ""
+
+#: ../saharan/tag.php:68 ../twentyfourteen/tag.php:22
+#: ../twentythirteen/tag.php:21
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../saharan/theme-config.php:94
+msgid "Section via hook"
+msgstr ""
+
+#: ../saharan/theme-config.php:95
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: ../saharan/theme-config.php:173
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: ../saharan/theme-config.php:190
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: ../saharan/theme-config.php:191
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: ../saharan/theme-config.php:192 ../twentyfifteen/inc/template-tags.php:102
+msgid "Tags"
+msgstr ""
+
+#: ../saharan/theme-config.php:197
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: ../saharan/theme-config.php:197
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: ../saharan/theme-config.php:213
+msgid "General"
+msgstr ""
+
+#: ../saharan/theme-config.php:214
+msgid "General theme options"
+msgstr ""
+
+#: ../saharan/theme-config.php:221
+msgid "Logo"
+msgstr ""
+
+#: ../saharan/theme-config.php:224
+msgid "Upload logo here."
+msgstr ""
+
+#: ../saharan/theme-config.php:229
+msgid "Favicon"
+msgstr ""
+
+#: ../saharan/theme-config.php:232
+msgid "Upload favicon here."
+msgstr ""
+
+#: ../saharan/theme-config.php:237
+msgid "Image 404"
+msgstr ""
+
+#: ../saharan/theme-config.php:240
+msgid "Upload image here."
+msgstr ""
+
+#: ../saharan/theme-config.php:247
+msgid "Background"
+msgstr ""
+
+#: ../saharan/theme-config.php:248
+msgid "Use this section to upload background images, select background color"
+msgstr ""
+
+#: ../saharan/theme-config.php:256
+msgid "Body Background"
+msgstr ""
+
+#: ../saharan/theme-config.php:257
+msgid "Body background with image, color. Only work with box layout"
+msgstr ""
+
+#: ../saharan/theme-config.php:264
+msgid "Colors"
+msgstr ""
+
+#: ../saharan/theme-config.php:265
+msgid "Color options"
+msgstr ""
+
+#: ../saharan/theme-config.php:271
+msgid "Primary Color"
+msgstr ""
+
+#: ../saharan/theme-config.php:272
+msgid "Pick a color for primary color (default: #f1574d)."
+msgstr ""
+
+#: ../saharan/theme-config.php:282
+msgid "Sale Label BG Color"
+msgstr ""
+
+#: ../saharan/theme-config.php:283
+msgid "Pick a color for bg sale label (default: #f44051)."
+msgstr ""
+
+#: ../saharan/theme-config.php:293
+msgid "Sale Label Text Color"
+msgstr ""
+
+#: ../saharan/theme-config.php:294
+msgid "Pick a color for sale label text (default: #f44051)."
+msgstr ""
+
+#: ../saharan/theme-config.php:304
+msgid "Rating Star Color"
+msgstr ""
+
+#: ../saharan/theme-config.php:305
+msgid "Pick a color for star of rating (default: #555656)."
+msgstr ""
+
+#: ../saharan/theme-config.php:315
+msgid "Header"
+msgstr ""
+
+#: ../saharan/theme-config.php:316
+msgid "Header options"
+msgstr ""
+
+#: ../saharan/theme-config.php:323
+msgid "Header Layout"
+msgstr ""
+
+#: ../saharan/theme-config.php:336
+msgid "Top Menu"
+msgstr ""
+
+#: ../saharan/theme-config.php:337 ../saharan/theme-config.php:492
+#: ../saharan/theme-config.php:499
+msgid "Select a menu"
+msgstr ""
+
+#: ../saharan/theme-config.php:342
+msgid "Header Shipping"
+msgstr ""
+
+#: ../saharan/theme-config.php:343
+msgid "HTML tags allowed: a, img, br, em, strong, p, ul, li"
+msgstr ""
+
+#: ../saharan/theme-config.php:349
+msgid "Mobile menu label"
+msgstr ""
+
+#: ../saharan/theme-config.php:350
+msgid "The label for mobile menu (example: Menu, Go to..."
+msgstr ""
+
+#: ../saharan/theme-config.php:358
+msgid "Footer"
+msgstr ""
+
+#: ../saharan/theme-config.php:359
+msgid "Footer options"
+msgstr ""
+
+#: ../saharan/theme-config.php:366
+msgid "Copyright information"
+msgstr ""
+
+#: ../saharan/theme-config.php:367
+msgid "HTML tags allowed: a, br, em, strong"
+msgstr ""
+
+#: ../saharan/theme-config.php:378
+msgid "Payment icons"
+msgstr ""
+
+#: ../saharan/theme-config.php:379
+msgid "HTML tags allowed: a, img"
+msgstr ""
+
+#: ../saharan/theme-config.php:392 ../saharan/theme-config.php:404
+msgid "Social Icons"
+msgstr ""
+
+#: ../saharan/theme-config.php:398
+msgid "Follow title"
+msgstr ""
+
+#: ../saharan/theme-config.php:405
+msgid "Enter social links"
+msgstr ""
+
+#: ../saharan/theme-config.php:406
+msgid "Drag/drop to re-arrange"
+msgstr ""
+
+#: ../saharan/theme-config.php:441
+msgid "Newsletter"
+msgstr ""
+
+#: ../saharan/theme-config.php:447
+msgid "Newsletter title"
+msgstr ""
+
+#: ../saharan/theme-config.php:453
+msgid "Newsletter form ID"
+msgstr ""
+
+#: ../saharan/theme-config.php:454
+msgid "The form ID of MailPoet plugin."
+msgstr ""
+
+#: ../saharan/theme-config.php:464
+msgid "Product Shortcode"
+msgstr ""
+
+#: ../saharan/theme-config.php:470
+msgid "Shortcode title"
+msgstr ""
+
+#: ../saharan/theme-config.php:476
+msgid "Shortcode"
+msgstr ""
+
+#: ../saharan/theme-config.php:484
+msgid "Menus"
+msgstr ""
+
+#: ../saharan/theme-config.php:491
+msgid "Menu #1"
+msgstr ""
+
+#: ../saharan/theme-config.php:498
+msgid "Menu #2"
+msgstr ""
+
+#: ../saharan/theme-config.php:506
+msgid "Fonts"
+msgstr ""
+
+#: ../saharan/theme-config.php:507
+msgid "Fonts options"
+msgstr ""
+
+#: ../saharan/theme-config.php:514
+msgid "Body font"
+msgstr ""
+
+#: ../saharan/theme-config.php:531
+msgid "Main body font."
+msgstr ""
+
+#: ../saharan/theme-config.php:543
+msgid "Heading font"
+msgstr ""
+
+#: ../saharan/theme-config.php:560
+msgid "Heading font."
+msgstr ""
+
+#: ../saharan/theme-config.php:571
+msgid "Menu font"
+msgstr ""
+
+#: ../saharan/theme-config.php:588
+msgid "Menu font."
+msgstr ""
+
+#: ../saharan/theme-config.php:601 ../twentyfourteen/inc/customizer.php:56
+msgid "Layout"
+msgstr ""
+
+#: ../saharan/theme-config.php:602
+msgid "Select page layout: Box or Full Width"
+msgstr ""
+
+#: ../saharan/theme-config.php:609
+msgid "Page Layout"
+msgstr ""
+
+#: ../saharan/theme-config.php:619
+msgid "Preset"
+msgstr ""
+
+#: ../saharan/theme-config.php:620
+msgid "Select a preset to quickly apply pre-defined colors and fonts"
+msgstr ""
+
+#: ../saharan/theme-config.php:633
+msgid "Show Style Switcher"
+msgstr ""
+
+#: ../saharan/theme-config.php:634
+msgid "The style switcher is only for preview on front-end"
+msgstr ""
+
+#: ../saharan/theme-config.php:643
+msgid "Upload brand logos and links"
+msgstr ""
+
+#: ../saharan/theme-config.php:650
+msgid "Number of logo columns per page"
+msgstr ""
+
+#: ../saharan/theme-config.php:651
+msgid "Number of logos columns per page, default value: 6"
+msgstr ""
+
+#: ../saharan/theme-config.php:661
+msgid "Auto scroll"
+msgstr ""
+
+#: ../saharan/theme-config.php:667
+msgid "Scroll amount"
+msgstr ""
+
+#: ../saharan/theme-config.php:668
+msgid "Number of logos to scroll one time, default value: 2"
+msgstr ""
+
+#: ../saharan/theme-config.php:678 ../saharan/theme-config.php:926
+msgid "Pause in (seconds)"
+msgstr ""
+
+#: ../saharan/theme-config.php:679 ../saharan/theme-config.php:927
+msgid "Pause time, default value: 3000"
+msgstr ""
+
+#: ../saharan/theme-config.php:689 ../saharan/theme-config.php:937
+msgid "Animate in (seconds)"
+msgstr ""
+
+#: ../saharan/theme-config.php:690 ../saharan/theme-config.php:938
+msgid "Animate time, default value: 2000"
+msgstr ""
+
+#: ../saharan/theme-config.php:700
+msgid "Logos"
+msgstr ""
+
+#: ../saharan/theme-config.php:701
+msgid "Upload logo image and enter logo link."
+msgstr ""
+
+#: ../saharan/theme-config.php:703
+#: ../saharan/woocommerce/class-wc-widget-cart.php:30
+msgid "Title"
+msgstr ""
+
+#: ../saharan/theme-config.php:704
+msgid "Description"
+msgstr ""
+
+#: ../saharan/theme-config.php:705
+msgid "Link"
+msgstr ""
+
+#: ../saharan/theme-config.php:713
+msgid "Sidebar"
+msgstr ""
+
+#: ../saharan/theme-config.php:714
+msgid "Sidebar options"
+msgstr ""
+
+#: ../saharan/theme-config.php:720
+msgid "Main Sidebar Position"
+msgstr ""
+
+#: ../saharan/theme-config.php:721
+msgid "Sidebar on category page"
+msgstr ""
+
+#: ../saharan/theme-config.php:730
+msgid "Secondary Sidebar Position"
+msgstr ""
+
+#: ../saharan/theme-config.php:731
+msgid "Sidebar on pages"
+msgstr ""
+
+#: ../saharan/theme-config.php:740
+msgid "Blog Sidebar Position"
+msgstr ""
+
+#: ../saharan/theme-config.php:741
+msgid "Sidebar on Blog pages"
+msgstr ""
+
+#: ../saharan/theme-config.php:752 ../saharan/woocommerce/cart/cart.php:26
+#: ../saharan/woocommerce/checkout/review-order.php:17
+msgid "Product"
+msgstr ""
+
+#: ../saharan/theme-config.php:753
+msgid "Use this section to select options for product"
+msgstr ""
+
+#: ../saharan/theme-config.php:759
+msgid "Shop Layout"
+msgstr ""
+
+#: ../saharan/theme-config.php:770
+msgid "Shop default view"
+msgstr ""
+
+#: ../saharan/theme-config.php:781
+msgid "Products per page"
+msgstr ""
+
+#: ../saharan/theme-config.php:782
+msgid "Amount of products per page on category page"
+msgstr ""
+
+#: ../saharan/theme-config.php:792
+msgid "Product columns"
+msgstr ""
+
+#: ../saharan/theme-config.php:793
+msgid "Amount of product columns on category page"
+msgstr ""
+
+#: ../saharan/theme-config.php:794 ../saharan/theme-config.php:806
+msgid "Only works with: 1, 2, 3, 4, 6"
+msgstr ""
+
+#: ../saharan/theme-config.php:804
+msgid "Product columns on full width shop"
+msgstr ""
+
+#: ../saharan/theme-config.php:805
+msgid "Amount of product columns on full width category page"
+msgstr ""
+
+#: ../saharan/theme-config.php:816
+msgid "Use secondary product image"
+msgstr ""
+
+#: ../saharan/theme-config.php:822
+msgid "Related products title"
+msgstr ""
+
+#: ../saharan/theme-config.php:828
+msgid "Number of related products"
+msgstr ""
+
+#: ../saharan/theme-config.php:838
+msgid "Up-Sells title"
+msgstr ""
+
+#: ../saharan/theme-config.php:844
+msgid "Cross-Sells title"
+msgstr ""
+
+#: ../saharan/theme-config.php:850
+msgid "View details text"
+msgstr ""
+
+#: ../saharan/theme-config.php:856
+msgid "View all features text"
+msgstr ""
+
+#: ../saharan/theme-config.php:857
+msgid "This is the text on quick view box"
+msgstr ""
+
+#: ../saharan/theme-config.php:863
+msgid "ShareThis/AddThis head tag"
+msgstr ""
+
+#: ../saharan/theme-config.php:864
+msgid "Paste your ShareThis or AddThis head tag here"
+msgstr ""
+
+#: ../saharan/theme-config.php:870
+msgid "ShareThis/AddThis code"
+msgstr ""
+
+#: ../saharan/theme-config.php:871
+msgid "Paste your ShareThis or AddThis code here"
+msgstr ""
+
+#: ../saharan/theme-config.php:880
+msgid "Use this section to select options for blog"
+msgstr ""
+
+#: ../saharan/theme-config.php:886
+msgid "Blog Layout"
+msgstr ""
+
+#: ../saharan/theme-config.php:898
+msgid "Blog header text"
+msgstr ""
+
+#: ../saharan/theme-config.php:904
+msgid "Read more text"
+msgstr ""
+
+#: ../saharan/theme-config.php:910
+msgid "Excerpt length on blog page"
+msgstr ""
+
+#: ../saharan/theme-config.php:920
+msgid "Latest posts auto scroll"
+msgstr ""
+
+#: ../saharan/theme-config.php:951
+msgid "Use this section to select options for Google Map on contact page"
+msgstr ""
+
+#: ../saharan/theme-config.php:957
+msgid "Show map"
+msgstr ""
+
+#: ../saharan/theme-config.php:958
+msgid "Show map on contact page"
+msgstr ""
+
+#: ../saharan/theme-config.php:964
+msgid "Locate by"
+msgstr ""
+
+#: ../saharan/theme-config.php:965
+msgid "Locate marker by address or coordinate"
+msgstr ""
+
+#: ../saharan/theme-config.php:975
+msgid "Map description"
+msgstr ""
+
+#: ../saharan/theme-config.php:976
+msgid "The text on map popup"
+msgstr ""
+
+#: ../saharan/theme-config.php:987
+msgid "Latitude"
+msgstr ""
+
+#: ../saharan/theme-config.php:993
+msgid "Longtitude"
+msgstr ""
+
+#: ../saharan/theme-config.php:999
+msgid "Address"
+msgstr ""
+
+#: ../saharan/theme-config.php:1005
+msgid "Zoom level"
+msgstr ""
+
+#: ../saharan/theme-config.php:1015
+msgid "Marker"
+msgstr ""
+
+#: ../saharan/theme-config.php:1018
+msgid "Upload marker image here, the image size is 32x47 pixels."
+msgstr ""
+
+#: ../saharan/theme-config.php:1025
+msgid "Custom CSS"
+msgstr ""
+
+#: ../saharan/theme-config.php:1026
+msgid "Add your Custom CSS code"
+msgstr ""
+
+#: ../saharan/theme-config.php:1032
+msgid "CSS Code"
+msgstr ""
+
+#: ../saharan/theme-config.php:1033
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: ../saharan/theme-config.php:1043
+msgid "Less Compiler"
+msgstr ""
+
+#: ../saharan/theme-config.php:1044
+msgid ""
+"Turn on this option to apply all theme options. Turn of when you have "
+"finished changing theme options and your site is ready."
+msgstr ""
+
+#: ../saharan/theme-config.php:1050
+msgid "Enable Less Compiler"
+msgstr ""
+
+#: ../saharan/theme-config.php:1057
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: ../saharan/theme-config.php:1058
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: ../saharan/theme-config.php:1059
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: ../saharan/theme-config.php:1063
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: ../saharan/theme-config.php:1068
+msgid "Import / Export"
+msgstr ""
+
+#: ../saharan/theme-config.php:1069
+msgid "Import and Export your Redux Framework settings from file, text or URL."
+msgstr ""
+
+#: ../saharan/theme-config.php:1084
+msgid "Theme Information"
+msgstr ""
+
+#: ../saharan/theme-config.php:1101
+msgid "Theme Information 1"
+msgstr ""
+
+#: ../saharan/theme-config.php:1102 ../saharan/theme-config.php:1108
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../saharan/theme-config.php:1107
+msgid "Theme Information 2"
+msgstr ""
+
+#: ../saharan/theme-config.php:1112
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../saharan/theme-config.php:1132 ../saharan/theme-config.php:1133
+msgid "Theme Options"
+msgstr ""
+
+#: ../saharan/woocommerce/archive-product.php:91
+#: ../twentyfourteen/inc/customizer.php:60
+msgid "Grid"
+msgstr ""
+
+#: ../saharan/woocommerce/archive-product.php:92
+msgid "List"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:25
+msgid "Image"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:27
+msgid "Price"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:28
+msgid "Quantity"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:29
+#: ../saharan/woocommerce/checkout/review-order.php:18
+#: ../saharan/woocommerce/myaccount/my-orders.php:35
+#: ../saharan/woocommerce/myaccount/my-orders.php:58
+msgid "Total"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:30
+msgid "Remove"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:68
+msgid "Available on backorder"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:102
+#: ../saharan/woocommerce/cart/mini-cart.php:52
+msgid "Remove this item"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:118
+msgid "Update Cart"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:119
+msgid "Continue Shopping"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:123
+msgid "Coupon"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:124
+msgid "Enter your coupon code if you have one."
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:125
+msgid "Coupon code"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/cart.php:126
+msgid "Apply Coupon"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/mini-cart.php:22
+msgid "My cart:"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/mini-cart.php:65
+msgid "You have no items in your shopping cart"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/mini-cart.php:66
+#: ../saharan/woocommerce/cart/mini-cart.php:72
+msgid "Subtotal"
+msgstr ""
+
+#: ../saharan/woocommerce/cart/mini-cart.php:77
+msgid "Checkout"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/form-checkout.php:20
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/form-checkout.php:49
+msgid "Your order"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/form-login.php:14
+msgid "Returning customer?"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/form-login.php:15
+msgid "Click here to login"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/form-login.php:22
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer please proceed to the Billing &amp; "
+"Shipping section."
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/review-order.php:50
+msgid "Cart Subtotal"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/review-order.php:97
+msgid "Order Total"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:16
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:20
+msgid "Please attempt your purchase again or go to your account page."
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:22
+msgid "Please attempt your purchase again."
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:26
+#: ../saharan/woocommerce/myaccount/my-orders.php:68
+msgid "Pay"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:28
+msgid "My Account"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:34
+#: ../saharan/woocommerce/checkout/thankyou.php:65
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:38
+msgid "Order:"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:42
+msgid "Date:"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:46
+msgid "Total:"
+msgstr ""
+
+#: ../saharan/woocommerce/checkout/thankyou.php:51
+msgid "Payment method:"
+msgstr ""
+
+#: ../saharan/woocommerce/class-wc-widget-cart.php:23
+msgid "Display the user's Cart in the sidebar."
+msgstr ""
+
+#: ../saharan/woocommerce/class-wc-widget-cart.php:25
+msgid "WooCommerce Cart"
+msgstr ""
+
+#: ../saharan/woocommerce/class-wc-widget-cart.php:29
+#: ../saharan/woocommerce/class-wc-widget-cart.php:54
+msgid "Cart"
+msgstr ""
+
+#: ../saharan/woocommerce/class-wc-widget-cart.php:35
+msgid "Hide if cart is empty"
+msgstr ""
+
+#: ../saharan/woocommerce/content-product-archive.php:62
+#: ../saharan/woocommerce/content-product.php:63
+#: ../saharan/woocommerce/single-product/sale-flash.php:16
+msgid "Sale"
+msgstr ""
+
+#: ../saharan/woocommerce/content-product-archive.php:97
+#: ../saharan/woocommerce/content-product.php:85
+msgid "Quick View"
+msgstr ""
+
+#: ../saharan/woocommerce/loop/orderby.php:14
+msgid "Sort By"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:29
+#: ../saharan/woocommerce/myaccount/form-login.php:49
+msgid "Login"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:34
+msgid "Username or email address"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:38
+#: ../saharan/woocommerce/myaccount/form-login.php:88
+msgid "Password"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:47
+msgid "Lost your password?"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:51
+msgid "Remember me"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:67
+#: ../saharan/woocommerce/myaccount/form-login.php:104
+msgid "Register"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:74
+msgid "Username"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:81
+msgid "Email address"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-login.php:95
+msgid "Anti-spam"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-lost-password.php:22
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-lost-password.php:24
+msgid "Username or email"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-lost-password.php:28
+msgid "Enter a new password below."
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-lost-password.php:31
+msgid "New password"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-lost-password.php:35
+msgid "Re-enter new password"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-lost-password.php:48
+msgid "Reset Password"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/form-lost-password.php:48
+msgid "Save"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-address.php:17
+msgid "My Addresses"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-address.php:19
+#: ../saharan/woocommerce/myaccount/my-address.php:25
+msgid "Billing Address"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-address.php:20
+msgid "Shipping Address"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-address.php:23
+msgid "My Address"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-address.php:35
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-address.php:64
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-downloads.php:20
+msgid "Available downloads"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-downloads.php:29
+#, php-format
+msgid "%s download remaining"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-orders.php:26
+msgid "Recent Orders"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-orders.php:32
+msgid "Order"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-orders.php:33
+#: ../saharan/woocommerce/myaccount/my-orders.php:52
+msgid "Date"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-orders.php:47
+msgid "Order Number"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-orders.php:59
+#, php-format
+msgid "%s for %s item"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-orders.php:75
+msgid "Cancel"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/my-orders.php:81
+msgid "View"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/view-order.php:19
+#, php-format
+msgid ""
+"Order <mark class=\"order-number\">%s</mark> was placed on <mark class="
+"\"order-date\">%s</mark> and is currently <mark class=\"order-status\">%s</"
+"mark>."
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/view-order.php:23
+msgid "Order Updates"
+msgstr ""
+
+#: ../saharan/woocommerce/myaccount/view-order.php:29
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:24
+#, php-format
+msgid "%s review for %s"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:26
+msgid "Reviews"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:47
+msgid "There are no reviews yet."
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:60
+msgid "Add a review"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:60
+msgid "Be the first to review"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:61
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:65
+msgid "Name"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:67
+msgid "Email"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:70
+msgid "Submit"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:76
+msgid "Your Rating"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:77
+msgid "Rate&hellip;"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:78
+msgid "Perfect"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:79
+msgid "Good"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:80
+msgid "Average"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:81
+msgid "Not that bad"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:82
+msgid "Very Poor"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:86
+msgid "Your Review"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product-reviews.php:95
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/add-to-cart/variable.php:23
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/add-to-cart/variable.php:33
+msgid "Clear selection"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/product-image.php:40
+msgid "Placeholder"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/rating.php:27
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/rating.php:29
+#, php-format
+msgid "out of %s5%s"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/rating.php:30
+#, php-format
+msgid "based on %s customer rating"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/rating.php:33
+#, php-format
+msgid "%s customer review"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/review.php:26
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/review.php:27
+msgid "out of 5"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/review.php:34
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/review.php:43
+msgid "verified owner"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/tabs/additional-information.php:17
+msgid "Additional Information"
+msgstr ""
+
+#: ../saharan/woocommerce/single-product/tabs/description.php:14
+msgid "Product Description"
+msgstr ""
+
+#: ../twentyfifteen/404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../twentyfifteen/404.php:21 ../twentyfourteen/404.php:21
+#: ../twentythirteen/404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../twentyfifteen/archive.php:49 ../twentyfifteen/index.php:46
+#: ../twentyfifteen/search.php:38
+msgid "Previous page"
+msgstr ""
+
+#: ../twentyfifteen/archive.php:50 ../twentyfifteen/index.php:47
+#: ../twentyfifteen/search.php:39
+msgid "Next page"
+msgstr ""
+
+#: ../twentyfifteen/archive.php:51 ../twentyfifteen/content-link.php:40
+#: ../twentyfifteen/content-page.php:29 ../twentyfifteen/content.php:42
+#: ../twentyfifteen/image.php:63 ../twentyfifteen/index.php:48
+#: ../twentyfifteen/search.php:40
+msgid "Page"
+msgstr ""
+
+#: ../twentyfifteen/author-bio.php:12
+msgid "Published by"
+msgstr ""
+
+#: ../twentyfifteen/content-link.php:31 ../twentyfifteen/content.php:33
+#: ../twentyfifteen/inc/template-tags.php:238
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: ../twentyfifteen/content-none.php:22 ../twentyfourteen/content-none.php:18
+#: ../twentythirteen/content-none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../twentyfifteen/content-none.php:26 ../twentyfourteen/content-none.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../twentyfifteen/content-none.php:31 ../twentyfourteen/content-none.php:27
+#: ../twentythirteen/content-none.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../twentyfifteen/footer.php:25 ../twentyfourteen/footer.php:21
+#: ../twentythirteen/footer.php:19
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../twentyfifteen/footer.php:25 ../twentyfourteen/footer.php:21
+#: ../twentythirteen/footer.php:19
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:86
+msgid "Social Links Menu"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:133
+msgid "Widget Area"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:135
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: ../twentyfifteen/functions.php:255
+msgid "expand child menu"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:256
+msgid "collapse child menu"
+msgstr ""
+
+#: ../twentyfifteen/header.php:26 ../twentyfourteen/header.php:53
+#: ../twentythirteen/header.php:44
+msgid "Skip to content"
+msgstr ""
+
+#: ../twentyfifteen/header.php:43
+msgid "Menu and widgets"
+msgstr ""
+
+#: ../twentyfifteen/image.php:24 ../twentyfourteen/image.php:65
+msgid "Previous Image"
+msgstr ""
+
+#: ../twentyfifteen/image.php:24 ../twentyfourteen/image.php:66
+msgid "Next Image"
+msgstr ""
+
+#: ../twentyfifteen/image.php:84
+msgid ""
+"<span class=\"meta-nav\">Published in</span><span class=\"post-title\">"
+"%title</span>"
+msgstr ""
+
+#: ../twentyfifteen/inc/back-compat.php:37
+#: ../twentyfifteen/inc/back-compat.php:47
+#: ../twentyfifteen/inc/back-compat.php:60
+#, php-format
+msgid ""
+"Twenty Fifteen requires at least WordPress version 4.1. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:31
+msgid "Base Color Scheme"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:46
+msgid "Header and Sidebar Text Color"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:47
+#: ../twentyfifteen/inc/customizer.php:63
+#: ../twentyfifteen/inc/customizer.php:68
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:62
+msgid "Header and Sidebar Background Color"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:92
+msgid "Default"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:103
+msgid "Dark"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:114
+msgid "Yellow"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:125
+msgid "Pink"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:136
+msgid "Purple"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:147
+msgid "Blue"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:23 ../twentyfourteen/comments.php:34
+#: ../twentyfourteen/comments.php:52 ../twentythirteen/comments.php:45
+msgid "Comment navigation"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:26
+msgid "Older Comments"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:49
+msgid "Featured"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:55
+msgid "Format"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:76
+msgid "Posted on"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:85
+msgid "Author"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:94
+msgid "Categories"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:113
+msgid "Full size"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:123
+#, php-format
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: ../twentyfifteen/single.php:34
+msgid "Next post:"
+msgstr ""
+
+#: ../twentyfifteen/single.php:37
+msgid "Previous post:"
+msgstr ""
+
+#: ../twentyfourteen/404.php:17 ../twentythirteen/404.php:16
+msgid "Not Found"
+msgstr ""
+
+#: ../twentyfourteen/author.php:31 ../twentythirteen/author.php:31
+#, php-format
+msgid "All posts by %s"
+msgstr ""
+
+#: ../twentyfourteen/comments.php:27
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: ../twentyfourteen/comments.php:35 ../twentyfourteen/comments.php:53
+#: ../twentythirteen/comments.php:46
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../twentyfourteen/comments.php:36 ../twentyfourteen/comments.php:54
+#: ../twentythirteen/comments.php:47
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../twentyfourteen/content-aside.php:37
+#: ../twentyfourteen/content-audio.php:37
+#: ../twentyfourteen/content-gallery.php:37
+#: ../twentyfourteen/content-image.php:37
+#: ../twentyfourteen/content-link.php:37
+#: ../twentyfourteen/content-quote.php:37
+#: ../twentyfourteen/content-video.php:37 ../twentyfourteen/content.php:38
+#: ../twentyfourteen/inc/widgets.php:194
+#: ../twentythirteen/content-gallery.php:43
+#: ../twentythirteen/content-image.php:39
+#: ../twentythirteen/content-quote.php:29
+#: ../twentythirteen/content-video.php:39 ../twentythirteen/content.php:56
+msgid "Leave a comment"
+msgstr ""
+
+#: ../twentyfourteen/content-aside.php:37
+#: ../twentyfourteen/content-audio.php:37
+#: ../twentyfourteen/content-gallery.php:37
+#: ../twentyfourteen/content-image.php:37
+#: ../twentyfourteen/content-link.php:37
+#: ../twentyfourteen/content-quote.php:37
+#: ../twentyfourteen/content-video.php:37 ../twentyfourteen/content.php:38
+#: ../twentyfourteen/inc/widgets.php:194
+msgid "1 Comment"
+msgstr ""
+
+#: ../twentyfourteen/content-aside.php:37
+#: ../twentyfourteen/content-audio.php:37
+#: ../twentyfourteen/content-gallery.php:37
+#: ../twentyfourteen/content-image.php:37
+#: ../twentyfourteen/content-link.php:37
+#: ../twentyfourteen/content-quote.php:37
+#: ../twentyfourteen/content-video.php:37 ../twentyfourteen/content.php:38
+#: ../twentyfourteen/inc/widgets.php:194
+msgid "% Comments"
+msgstr ""
+
+#: ../twentyfourteen/content-aside.php:48
+#: ../twentyfourteen/content-audio.php:48
+#: ../twentyfourteen/content-gallery.php:48
+#: ../twentyfourteen/content-image.php:48
+#: ../twentyfourteen/content-link.php:48
+#: ../twentyfourteen/content-quote.php:48
+#: ../twentyfourteen/content-video.php:48 ../twentyfourteen/content.php:56
+#: ../twentyfourteen/inc/template-tags.php:222
+#: ../twentythirteen/content-aside.php:16
+#: ../twentythirteen/content-audio.php:27
+#: ../twentythirteen/content-chat.php:26
+#: ../twentythirteen/content-gallery.php:27
+#: ../twentythirteen/content-image.php:26
+#: ../twentythirteen/content-link.php:27
+#: ../twentythirteen/content-quote.php:16
+#: ../twentythirteen/content-status.php:16
+#: ../twentythirteen/content-video.php:26 ../twentythirteen/content.php:44
+#: ../twentythirteen/functions.php:478
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentyfourteen/functions.php:83
+msgid "Top primary menu"
+msgstr ""
+
+#: ../twentyfourteen/functions.php:84
+msgid "Secondary menu in left sidebar"
+msgstr ""
+
+#: ../twentyfourteen/functions.php:171
+msgid "Primary Sidebar"
+msgstr ""
+
+#: ../twentyfourteen/functions.php:173
+msgid "Main sidebar that appears on the left."
+msgstr ""
+
+#: ../twentyfourteen/functions.php:180
+msgid "Content Sidebar"
+msgstr ""
+
+#: ../twentyfourteen/functions.php:182
+msgid "Additional sidebar that appears on the right."
+msgstr ""
+
+#: ../twentyfourteen/functions.php:189
+msgid "Footer Widget Area"
+msgstr ""
+
+#: ../twentyfourteen/functions.php:191 ../twentythirteen/functions.php:233
+msgid "Appears in the footer section of the site."
+msgstr ""
+
+#: ../twentyfourteen/functions.php:376
+#, php-format
+msgid "%d Article"
+msgstr ""
+
+#: ../twentyfourteen/functions.php:495 ../twentythirteen/functions.php:218
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../twentyfourteen/header.php:48
+msgid "Search"
+msgstr ""
+
+#: ../twentyfourteen/inc/back-compat.php:37
+#: ../twentyfourteen/inc/back-compat.php:47
+#: ../twentyfourteen/inc/back-compat.php:60
+#, php-format
+msgid ""
+"Twenty Fourteen requires at least WordPress version 3.6. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:24
+msgid "Site Title Color"
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:27
+msgid "Display Site Title &amp; Tagline"
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:31
+#: ../twentyfourteen/inc/customizer.php:32
+msgid "May only be visible on wide screens."
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:34
+#: ../twentyfourteen/inc/customizer.php:35
+msgid "Background may only be visible on wide screens."
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:40
+#: ../twentyfourteen/inc/featured-content.php:403
+msgid "Featured Content"
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:41
+#: ../twentyfourteen/inc/featured-content.php:404
+#, php-format
+msgid ""
+"Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the "
+"tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:42
+#: ../twentyfourteen/inc/customizer.php:108
+#: ../twentyfourteen/inc/featured-content.php:405
+#: ../twentyfourteen/inc/featured-content.php:414
+#: ../twentyfourteen/inc/featured-content.php:474
+msgid "featured"
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:61
+msgid "Slider"
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:105
+msgid "Twenty Fourteen"
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:108
+#, php-format
+msgid ""
+"The home page features your choice of up to 6 posts prominently displayed in "
+"a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change "
+"the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If "
+"no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed "
+"instead."
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:109
+#, php-format
+msgid ""
+"Enhance your site design by using <a href=\"%s\">Featured Images</a> for "
+"posts you&rsquo;d like to stand out (also known as post thumbnails). This "
+"allows you to associate an image with your post without inserting it. Twenty "
+"Fourteen uses featured images for posts and pages&mdash;above the "
+"title&mdash;and in the Featured Content area on the home page."
+msgstr ""
+
+#: ../twentyfourteen/inc/customizer.php:110
+#, php-format
+msgid ""
+"For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s"
+"\">Twenty Fourteen documentation</a>."
+msgstr ""
+
+#: ../twentyfourteen/inc/featured-content.php:426
+msgid "Tag Name"
+msgstr ""
+
+#: ../twentyfourteen/inc/featured-content.php:431
+msgid "Don&rsquo;t display tag on front end."
+msgstr ""
+
+#: ../twentyfourteen/inc/template-tags.php:58
+#: ../twentythirteen/functions.php:266
+msgid "Posts navigation"
+msgstr ""
+
+#: ../twentyfourteen/inc/template-tags.php:89
+msgid "<span class=\"meta-nav\">Published In</span>%title"
+msgstr ""
+
+#: ../twentyfourteen/inc/template-tags.php:91
+msgid "<span class=\"meta-nav\">Previous Post</span>%title"
+msgstr ""
+
+#: ../twentyfourteen/inc/template-tags.php:92
+msgid "<span class=\"meta-nav\">Next Post</span>%title"
+msgstr ""
+
+#: ../twentyfourteen/inc/template-tags.php:109
+#: ../twentythirteen/functions.php:322
+msgid "Sticky"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:34
+msgid "Twenty Fourteen Ephemera"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:36
+msgid ""
+"Use this widget to list your recent Aside, Quote, Video, Audio, Image, "
+"Gallery, and Link posts."
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:54
+#: ../twentyfourteen/taxonomy-post_format.php:33
+msgid "Images"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:55
+msgid "More images"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:58
+#: ../twentyfourteen/taxonomy-post_format.php:36
+msgid "Videos"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:59
+msgid "More videos"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:62
+#: ../twentyfourteen/taxonomy-post_format.php:39
+msgid "Audio"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:63
+msgid "More audio"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:66
+#: ../twentyfourteen/taxonomy-post_format.php:42
+msgid "Quotes"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:67
+msgid "More quotes"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:70
+#: ../twentyfourteen/taxonomy-post_format.php:45
+msgid "Links"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:71
+msgid "More links"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:74
+#: ../twentyfourteen/taxonomy-post_format.php:48
+msgid "Galleries"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:75
+msgid "More galleries"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:79
+#: ../twentyfourteen/taxonomy-post_format.php:30
+msgid "Asides"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:80
+msgid "More asides"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:162
+#, php-format
+msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:206
+#, php-format
+msgid "%s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:258
+msgid "Number of posts to show:"
+msgstr ""
+
+#: ../twentyfourteen/inc/widgets.php:261
+msgid "Post format to show:"
+msgstr ""
+
+#: ../twentythirteen/404.php:21
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: ../twentythirteen/author-bio.php:30
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentythirteen/content-gallery.php:43
+#: ../twentythirteen/content-image.php:39
+#: ../twentythirteen/content-quote.php:29
+#: ../twentythirteen/content-video.php:39 ../twentythirteen/content.php:56
+msgid "One comment so far"
+msgstr ""
+
+#: ../twentythirteen/content-gallery.php:43
+#: ../twentythirteen/content-image.php:39
+#: ../twentythirteen/content-quote.php:29
+#: ../twentythirteen/content-video.php:39 ../twentythirteen/content.php:56
+#, php-format
+msgid "View all % comments"
+msgstr ""
+
+#: ../twentythirteen/content-none.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: ../twentythirteen/functions.php:97
+msgid "Navigation Menu"
+msgstr ""
+
+#: ../twentythirteen/functions.php:231
+msgid "Main Widget Area"
+msgstr ""
+
+#: ../twentythirteen/functions.php:241
+msgid "Secondary Widget Area"
+msgstr ""
+
+#: ../twentythirteen/functions.php:243
+msgid "Appears on posts and pages in the sidebar."
+msgstr ""
+
+#: ../twentythirteen/functions.php:303
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr ""
+
+#: ../twentythirteen/functions.php:304
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentythirteen/functions.php:363
+#, php-format
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: ../twentythirteen/functions.php:369
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../twentythirteen/header.php:43
+msgid "Menu"
+msgstr ""
+
+#: ../twentythirteen/image.php:22
+#, php-format
+msgid ""
+"<span class=\"attachment-meta\">Published on <time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" "
+"rel=\"gallery\">%5$s</a></span>"
+msgstr ""
+
+#: ../twentythirteen/image.php:39
+msgid "Full resolution"
+msgstr ""
+
+#: ../twentythirteen/image.php:51
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../twentythirteen/image.php:52
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentythirteen/inc/back-compat.php:37
+#: ../twentythirteen/inc/back-compat.php:47
+#: ../twentythirteen/inc/back-compat.php:60
+#, php-format
+msgid ""
+"Twenty Thirteen requires at least WordPress version 3.6. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: ../twentythirteen/inc/custom-header.php:49
+msgid "Circle"
+msgstr ""
+
+#: ../twentythirteen/inc/custom-header.php:54
+msgid "Diamond"
+msgstr ""
+
+#: ../twentythirteen/inc/custom-header.php:59
+msgid "Star"
+msgstr ""
+
+#: ../twentythirteen/taxonomy-post_format.php:23
+#, php-format
+msgid "%s Archives"
+msgstr ""

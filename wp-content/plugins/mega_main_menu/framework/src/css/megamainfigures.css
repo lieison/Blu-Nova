@@ -1,0 +1,88 @@
+/* mm_figure */
+@font-face {
+	font-family: 'megamaingifures';
+		src: url('../fonts/megamaingifures.eot');
+		src: url('../fonts/megamaingifures.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/megamaingifures.woff') format('woff'),
+			 url('../fonts/megamaingifures.ttf') format('truetype'),
+			 url('../fonts/megamaingifures.svg#megamaingifures') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+.mm_figure
+{
+	line-height: 1;
+	text-align: center;
+	display: inline-block;
+	padding-top: 0.3%;
+	padding-bottom: 0.3%;
+	position: relative;
+}
+.mm_figure * 
+{
+	text-shadow: none;
+}
+.mm_figure:before
+{
+	font-family: megamaingifures, 'megamaingifures' !important;
+	vertical-align: top !important;
+	display: inline-block !important;
+	line-height: 100% !important;
+	speak: none !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	text-decoration:none !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+.mm_figure.none:before
+{
+	content: '\n' !important;
+}
+.mm_figure.circle:before
+{
+	content: '0' !important;
+}
+.mm_figure.triangle:before
+{
+	content: '3' !important;
+}
+.mm_figure.triangle_alt:before
+{
+	content: 'e' !important;
+}
+.mm_figure.square:before
+{
+	content: '4' !important;
+}
+.mm_figure.square_alt:before
+{
+	content: 'r' !important;
+}
+.mm_figure.pentagon:before
+{
+	content: '5' !important;
+}
+.mm_figure.pentagon_alt:before
+{
+	content: 't' !important;
+}
+.mm_figure.hexagon:before
+{
+	content: '6' !important;
+}
+.mm_figure.hexagon_alt:before
+{
+	content: 'y' !important;
+}
+.mm_figure.octagon:before
+{
+	content: '8' !important;
+}
+.mm_figure.octagon_alt:before
+{
+	content: 'i' !important;
+}
+.mm_figure.sticker:before
+{
+	content: '9' !important;
+}

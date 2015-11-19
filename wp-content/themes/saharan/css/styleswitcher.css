@@ -1,0 +1,440 @@
+/*
+Styles Switcher.
+*/
+.style-switcher {
+	height: 100%;
+    left: -290px;
+    position: fixed;
+    top: 0;
+    width: 290px;
+    z-index: 20000;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}	
+.style-switcher.open {
+	left: 0;
+}
+.style-switcher .stoggler {
+	background: #fff;
+    border-image: none;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: #777;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    height: 55px;
+    line-height: 55px;
+    position: absolute;
+    right: -49px;
+    text-align: center;
+    top: 50%;
+    width: 50px;
+    z-index: 1;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.style-switcher .stoggler:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.style-switcher h2, .style-switcher h3 {
+	color: #777;
+	font-size: 14px;
+	font-weight: normal;
+}
+.style-switcher h2 {
+	border-bottom: 1px solid #eee;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.style-switcher h3 {
+	margin-top: 15px;
+}
+.style-switcher select {
+    border: 1px solid #ddd;
+	height: 28px;
+	width: 100%;
+}
+.style-switcher .spanel {
+	background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    float: left;
+    height: 100%;
+    padding: 50px 25px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.style-switcher ul {
+	margin: 0;
+	padding: 0;
+}
+.style-switcher #resetpreview {
+	background: #777;
+    border: none;
+    border-radius: 2px;
+    margin: 10px 0 0;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.style-switcher #resetpreview:hover {
+	background: #555;
+}
+.style-switcher .colors {
+	list-style: none;
+	margin: 0 0 10px;
+	overflow: hidden;
+}	
+.style-switcher .colors li {
+	float: left;
+	margin: 4px 2px 0;
+}	
+.style-switcher .colors li a {
+	cursor: pointer;
+	display: block;
+	height: 17px;
+	width: 17px;
+}
+#bg a {
+	border: 1px solid #ccc;
+}
+.green-bg {
+	background-color: #3acf87 !important;
+}
+.blue-bg {
+	background-color: #2db2ea !important;
+}
+.orange-bg {
+	background-color: #fa5b0f !important;
+}
+.navy-bg {
+	background-color: #495d7f !important;
+}
+.yellow-bg {
+	background-color: #ffb400 !important;
+}
+.peach-bg {
+	background-color: #fcab55 !important;
+}
+.red-bg {
+	background-color: #dd3737 !important;
+}
+.beige-bg {
+	background-color: #bfa980 !important;
+}
+.pink-bg {
+	background-color: #d64391 !important;
+}
+.cyan-bg {
+	background-color: #37b6bd !important;
+}
+.celadon-bg {
+	background-color: #74aea1 !important;
+}
+.brown-bg {
+	background-color: #784e3d !important;
+}
+.cherry-bg {
+	background-color: #911938 !important;
+}
+.gray-bg {
+	background-color: #808080 !important;
+}
+.purple-bg {
+	background-color: #917ae9 !important;
+}
+.dark-bg {
+	background-color: #404040 !important;
+}
+.green-text {
+	color: #3acf87 !important;
+}
+.blue-text {
+	color: #2db2ea !important;
+}
+.orange-text {
+	color: #fa5b0f !important;
+}
+.navy-text {
+	color: #495d7f !important;
+}
+.yellow-text {
+	color: #ffb400 !important;
+}
+.peach-text {
+	color: #fcab55 !important;
+}
+.red-text {
+	color: #dd3737 !important;
+}
+.beige-text {
+	color: #bfa980 !important;
+}
+.pink-text {
+	color: #d64391 !important;
+}
+.cyan-text {
+	color: #37b6bd !important;
+}
+.celadon-text {
+	color: #74aea1 !important;
+}
+.brown-text {
+	color: #784e3d !important;
+}
+.cherry-text {
+	color: #911938 !important;
+}
+.white-text {
+	color: #ffffff !important;
+}
+.purple-text {
+	color: #917ae9 !important;
+}
+.dark-text {
+	color: #404040 !important;
+}
+#saletextcolor .green-text {
+	background-color: #3acf87 !important;
+}
+#saletextcolor .blue-text {
+	background-color: #2db2ea !important;
+}
+#saletextcolor .orange-text {
+	background-color: #fa5b0f !important;
+}
+#saletextcolor .navy-text {
+	background-color: #495d7f !important;
+}
+#saletextcolor .yellow-text {
+	background-color: #ffb400 !important;
+}
+#saletextcolor .peach-text {
+	background-color: #fcab55 !important;
+}
+#saletextcolor .red-text {
+	background-color: #dd3737 !important;
+}
+#saletextcolor .beige-text {
+	background-color: #bfa980 !important;
+}
+#saletextcolor .pink-text {
+	background-color: #d64391 !important;
+}
+#saletextcolor .cyan-text {
+	background-color: #37b6bd !important;
+}
+#saletextcolor .celadon-text {
+	background-color: #74aea1 !important;
+}
+#saletextcolor .brown-text {
+	background-color: #784e3d !important;
+}
+#saletextcolor .cherry-text {
+	background-color: #911938 !important;
+}
+#saletextcolor .white-text {
+	background-color: #ffffff !important;
+}
+#saletextcolor .purple-text {
+	background-color: #917ae9 !important;
+}
+#saletextcolor .dark-text {
+	background-color: #404040 !important;
+}
+.bg0 {
+	background-image: url("../images/bg/pattern0.png") !important;
+	background-repeat: repeat !important;
+}
+.bg1 {
+	background-image: url("../images/bg/pattern1.png") !important;
+	background-repeat: repeat !important;
+}
+.bg2 {
+	background-image: url("../images/bg/pattern2.png") !important;
+	background-repeat: repeat !important;
+}
+.bg3 {
+	background-image: url("../images/bg/pattern3.png") !important;
+	background-repeat: repeat !important;
+}
+.bg4 {
+	background-image: url("../images/bg/pattern4.png") !important;
+	background-repeat: repeat !important;
+}
+.bg5 {
+	background-image: url("../images/bg/pattern5.png") !important;
+	background-repeat: repeat !important;
+}
+.bg6 {
+	background-image: url("../images/bg/pattern6.png") !important;
+	background-repeat: repeat !important;
+}
+.bg7 {
+	background-image: url("../images/bg/pattern7.png") !important;
+	background-repeat: repeat !important;
+}
+.bg8 {
+	background-image: url("../images/bg/pattern8.png") !important;
+	background-repeat: repeat !important;
+}
+.bg9 {
+	background-image: url("../images/bg/pattern9.png") !important;
+	background-repeat: repeat !important;
+}
+.bg10 {
+	background-image: url("../images/bg/pattern10.png") !important;
+	background-repeat: repeat !important;
+}
+.bg11 {
+	background-image: url("../images/bg/pattern11.png") !important;
+	background-repeat: repeat !important;
+}
+.bg12 {
+	background-image: url("../images/bg/pattern12.png") !important;
+	background-repeat: repeat !important;
+}
+.bg13 {
+	background-image: url("../images/bg/pattern13.png") !important;
+	background-repeat: repeat !important;
+}
+.bg14 {
+	background-image: url("../images/bg/pattern14.png") !important;
+	background-repeat: repeat !important;
+}
+.bg15 {
+	background-image: url("../images/bg/pattern15.png") !important;
+	background-repeat: repeat !important;
+}
+.bg16 {
+	background-image: url("../images/bg/pattern16.png") !important;
+	background-repeat: repeat !important;
+}
+.bg17 {
+	background-image: url("../images/bg/pattern17.png") !important;
+	background-repeat: repeat !important;
+}
+.bg18 {
+	background-image: url("../images/bg/pattern18.png") !important;
+	background-repeat: repeat !important;
+}
+.bg19 {
+	background-image: url("../images/bg/pattern19.png") !important;
+	background-repeat: repeat !important;
+}
+.bg20 {
+	background-image: url("../images/bg/pattern20.png") !important;
+	background-repeat: repeat !important;
+}
+.bg21 {
+	background-image: url("../images/bg/pattern21.png") !important;
+	background-repeat: repeat !important;
+}
+.bg22 {
+	background-image: url("../images/bg/pattern22.png") !important;
+	background-repeat: repeat !important;
+}
+.bg23 {
+	background-image: url("../images/bg/pattern23.png") !important;
+	background-repeat: repeat !important;
+}
+.bg24 {
+	background-image: url("../images/bg/pattern24.png") !important;
+	background-repeat: repeat !important;
+}
+.bg25 {
+	background-image: url("../images/bg/pattern25.png") !important;
+	background-repeat: repeat !important;
+}
+.bg26 {
+	background-image: url("../images/bg/pattern26.png") !important;
+	background-repeat: repeat !important;
+}
+.bg27 {
+	background-image: url("../images/bg/pattern27.png") !important;
+	background-repeat: repeat !important;
+}
+.bg28 {
+	background-image: url("../images/bg/pattern28.png") !important;
+	background-repeat: repeat !important;
+}
+.bg29 {
+	background-image: url("../images/bg/pattern29.png") !important;
+	background-repeat: repeat !important;
+}
+.bg30 {
+	background-image: url("../images/bg/pattern30.png") !important;
+	background-repeat: repeat !important;
+}
+.presets {
+    margin-top: 20px;
+}
+ul.preset {
+	margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 10px;
+}
+ul.preset li {
+    float: left;
+    list-style: none;
+    margin: 0 0 5px;
+	padding: 0 5px;
+    width: 50%;
+}
+ul.preset li a {
+	color: #fff;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul.preset li a.preset1 {
+	background: #ff8787;
+}
+ul.preset li a.preset2 {
+	background: #5ed9e7;
+}
+ul.preset li a.preset3 {
+	background: #fa713a;
+}
+ul.preset li a.preset4 {
+	background: #FFB548;
+}
+ul.preset li a.preset5 {
+	background: #EF7C3D;
+}
+ul.preset li a.preset6 {
+	background: #DE4C4A;
+}
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+.stoggler .fa {
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
