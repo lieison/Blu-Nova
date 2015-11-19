@@ -49,7 +49,7 @@ width:100%;
 }
 /* ----------------------------- Begin Left ------------------------*/
 #dg-left {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .menu-left {
   list-style: none outside none;
@@ -522,7 +522,7 @@ div.dg-tools small {
 
 /* ------------------------------ Begin Mobile ---------------------*/
 .col-left{position:absolute; left:0px; width:210px; z-index:10000;top:0px;}
-.col-right{position:absolute; right:0px; width:220px; z-index:10000;top:60px;}
+.col-right{position:absolute; right:0px; width:220px; z-index:10000;top:50px;}
 .sb_toggle {display:none;}
 .nav-pills {display:block!important;}
 #dg-modal {

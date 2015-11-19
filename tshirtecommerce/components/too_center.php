@@ -3,8 +3,8 @@ $products = $GLOBALS['products'];
 $addons = $GLOBALS['addons'];
 ?>
 <div class="col-xs-12 col-md-12 col-center align-center">
-	<!-- Begin sidebar -->
-	<div id="dg-sidebar">
+	<!-- Begin sidebar  que no se muestra -->
+	<div style="display:none;" id="dg-sidebar">
 		<div class="dg-tools">
 			<button type="button" class="btn btn-default btn-sm" onclick="design.save()">
 				<i class="fa fa-save"></i>
@@ -105,5 +105,5 @@ $addons = $GLOBALS['addons'];
 		</div>
 	</div>
 	
-	<div class="" id="product-thumbs"></div>
+	<div style="display:none;" class="" id="product-thumbs"></div>
 </div>
