@@ -142,5 +142,23 @@ class LieisonTshirt {
         return;
         
     }
+    
+    
+    public function Delete_WC($post_id){
+        
+          include $this->path . "wp-config.php";
+          
+          try {
+              
+               wp_delete_post($post_id);
+
+          } catch (Exception $ex) {
+              
+          }
+          
+        
+           return;
+        
+    }
 
 }
