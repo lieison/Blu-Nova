@@ -8,9 +8,13 @@ class LieisonTshirt {
         $this->path = $path;
     }
 
-    /*     * *
+    
+    
+    /* *
      * GUARDA EL POST DIRECTAMENTE A WOOCOMMECERCE
      * * */
+    
+    
 
     public function Save_WC($post) {
 
@@ -37,20 +41,26 @@ class LieisonTshirt {
         $post_id = wp_insert_post($post_data);
 
 
+        
+        //ARREGLO QUE AGREGA ELPRODUCTO A WOOCOMMERCES Y SE ACTIVA SEGUN PLUGIN
         $array_data[] = array(
             "_product_id" => $post['id'],
             "_product_title_img" => $post['title'] . "::" . stripslashes($post['image'])
         );
-
+        
+        
+        //ACTUALIZAMOS LA DATA EN LA EIQUETA 
         update_post_meta($post_id, 'wc_productdata_options', $array_data);
 
 
+        //VERIFICAMOS SI EXISTE UN USUARIO A ASIGNARLE EL POST
         if ($current_user->ID == NULL || empty($current_user->ID)) {
             return null;
         }
 
 
 
+        //WOOCOMMERCES INFORMACION IMPORTANTE 
         update_post_meta($post_id, '_visibility', 'visible');
         update_post_meta($post_id, '_stock_status', 'instock');
 
@@ -70,7 +80,7 @@ class LieisonTshirt {
         update_post_meta($post_id, '_height', "");
 
 
-        //WOOCOMMERCES PARA PLUGIN
+        //WOOCOMMERCES PARA PLUGIN DE TSHIRT
         update_post_meta($post_id, '_product_version', "2.4.9");
         update_post_meta($post_id, '_edit_lock', rand(1000, 200000) . rand(455556, 488555) . ":" . "1");
         update_post_meta($post_id, '_edit_last', "1");
@@ -78,13 +88,17 @@ class LieisonTshirt {
         update_post_meta($post_id, '_crosssell_ids', array());
         update_post_meta($post_id, '_edit_last', "1");
         update_post_meta($post_id, '_regular_price', "");
-        update_post_meta($post_id, '_sale_price', "");
         update_post_meta($post_id, '_product_image_gallery', $post['image']);
         update_post_meta( $post_id, '_thumbnail_id', $post['image'] );
 
-
         
+        //PRECIO DE VENTA
+        if( !empty($post['sale_price'])  && $post['sale_price'] != 0){
+             update_post_meta($post_id, '_sale_price',$post['sale_price'] );
+        }
 
+       
+        //WOOCOMMERCES NO HAY PIERDE ACA XD
         update_post_meta($post_id, '_sku', $post['sku']);
 
         update_post_meta($post_id, '_product_attributes', array());
@@ -100,6 +114,7 @@ class LieisonTshirt {
         update_post_meta($post_id, '_backorders', "no");
         update_post_meta($post_id, '_stock', "");
 
+        //FINALIZANDO ... 
 
         return;
     }
