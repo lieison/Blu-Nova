@@ -3117,7 +3117,7 @@ var design={
 			if ($jd(e).draggable('option', 'disabled') == true)
 				$jd(e).draggable({ disabled: false });
 			
-                        //ROLI
+                        //ROLI -->POPOVER PARA CLASE DE DISEÑO
 			//design.popover('add_item_'+jQuery(e).data('type'));
 			jQuery('.add_item_'+jQuery(e).data('type')).addClass('active');
 			design.menu(jQuery(e).data('type'));
