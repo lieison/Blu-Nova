@@ -13,9 +13,11 @@ $product = $GLOBALS['product'];
 							<select data-level="1" id="parent-categories-1" class="form-control input-sm" onchange="design.products.changeCategory(this)">
 								<option value="0"> - <?php echo lang('designer_product_select_category'); ?> - </option>
 								<?php 
-								foreach ($product->categories as $category) { 
-								if ($category->parent_id > 0) continue;
-								?>
+								
+                                                                foreach ($product->categories as $category) { 
+                                                                        if ($category->parent_id > 0) continue;
+								
+                                                                ?>
 								<option value="<?php echo $category->id; ?>"><?php echo $category->title; ?></option>
 								<?php } ?>
 								

@@ -1592,6 +1592,7 @@ var design={
 			jQuery('#dg-products .product-list').hide();
 		},
 		productCate: function(id){
+                        
 			var seft = this;
 			if (typeof seft.products[id] != 'undefined'){
 				seft.addProduct(seft.products[id]);
@@ -1604,6 +1605,8 @@ var design={
 					url: mainURL + url_ajax_product,
 					data: { id: id }
 				}).done(function( data ) {
+                                    
+                                       
 					jQuery.each(data.products, function(i, product){
 						seft.product[product.id] = product;
 					});
@@ -1614,32 +1617,41 @@ var design={
 				});
 			}
 		},
-		addProduct: function(products){							
+		addProduct: function(products){	
+                    
+                        //@@EDIT
 			
 			jQuery('.product-list').html('');
 			
 			if (products.length == 0) return;
 			
 			var seft = this;
+                        //@@EDIT TITLE 
+                        jQuery('.product-list').append("<select class='form-control input-sm'>");
 			jQuery.each(products, function(i, product){
 				var div = document.createElement('div');
 					div.setAttribute('data-id', product.id);
-					div.className = 'product-box col-xs-6 col-sm-4 col-md-3';
+					div.className = 'product-box col-xs-6 col-sm-4 col-md-12';
 				jQuery(div).click(function(){ seft.changeProduct(this, product); } );			
 				
-				html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
-					div.innerHTML = html;
+				//html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
+					//div.innerHTML = html;
+                                html = "<option value='' >" + product.title + "</option>";
 				
 				jQuery('.product-list').append(div);
 			});
+                        jQuery('.product-list').append("</select>");
+                        
 		},
 		changeCategory: function(e)
 		{	
+                       
 			jQuery('#close-product-detail').trigger('click');
 			this.childCate(e);
 			this.productCate(e.value);
 		},
 		childCate: function(e){
+                    
 			var seft = this;
 			if (typeof seft.categories != 'undefined' & typeof seft.categories[e.value] != 'undefined'){
 				seft.addCatogory(e, seft.categories[e.value]);

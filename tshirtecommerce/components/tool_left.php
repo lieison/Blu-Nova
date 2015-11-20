@@ -19,12 +19,13 @@ $addons = $GLOBALS['addons'];
 
                 <!-- dropdown list -->
                 <div id="dg-layers">
-                    <div class="col-sm-11" id="list-categories">
+                    <div class="col-sm-12" id="list-categories">
                         <?php if (isset($product->categories) && count($product->categories)) { ?>
-                            <div class="col-xs-4 col-md-3">
+                            <div class="col-xs-4 col-md-12">
                                 <select data-level="1" id="parent-categories-1" class="form-control input-sm" onchange="design.products.changeCategory(this)">
                                     <option value="0"> - <?php echo lang('designer_product_select_category'); ?> - </option>
                                     <?php
+                                     
                                     foreach ($product->categories as $category) {
                                         if ($category->parent_id > 0)
                                             continue;
