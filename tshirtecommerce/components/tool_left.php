@@ -14,21 +14,53 @@ $addons = $GLOBALS['addons'];
     <div id="dg-left" class="width-100">
         <div class="dg-box width-100">
             <div class="accordion">
+
                 <h3><i class="fa fa-user"></i> <?php echo lang('designer_menu_choose_product'); ?></h3>
+
+                <!-- dropdown list -->
                 <div id="dg-layers">
-                    <ul>hola
-                    </ul>
+                    <div class="col-sm-11" id="list-categories">
+                        <?php if (isset($product->categories) && count($product->categories)) { ?>
+                            <div class="col-xs-4 col-md-3">
+                                <select data-level="1" id="parent-categories-1" class="form-control input-sm" onchange="design.products.changeCategory(this)">
+                                    <option value="0"> - <?php echo lang('designer_product_select_category'); ?> - </option>
+                                    <?php
+                                    foreach ($product->categories as $category) {
+                                        if ($category->parent_id > 0)
+                                            continue;
+                                        ?>
+                                        <option value="<?php echo $category->id; ?>"><?php echo $category->title; ?></option>
+                                    <?php } ?>
+
+                                </select>
+                            </div>
+                        <?php } ?>
+                    </div>
+                    
+                    <!-- show products -->
+                    <div class="row">
+                        <!-- list product category -->
+                        <div class="product-list col-sm-12">
+                        </div>
+
+                        <!-- product detail -->
+                        <div class="products-detail col-sm-12">
+                            <button type="button" class="btn btn-danger btn-sm" id="close-product-detail">Close</button>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary" id="loading-change-product" data-loading-text="<?php echo lang('designer_loading_btn'); ?>..." onclick="design.products.changeDesign(this)"><?php echo lang('designer_product_change_product'); ?></button>
+                    
                 </div>
-        
-                   <h3 onclick="javascript:void(0)" class="add_item_text" >
+
+                
+
+                <h3 onclick="javascript:void(0)" class="add_item_text" >
                     <i class="fa fa-text-height"></i> <?php echo lang('designer_menu_add_text'); ?>
                 </h3>
-           
+
                 <div id="dg-layers">
-                    
-
                     <!-- ---------------------------------------------- -->
-
                     <div  class="dg-options-content">
                         <!-- edit text -->
                         <div class="row toolbar-action-text">
@@ -136,19 +168,20 @@ $addons = $GLOBALS['addons'];
 
                         <?php $addons->text(); ?>		
                     </div>
-                    
                     <!-- ---------------------------------------------- -->
 
-
-                    <ul class="menu-left">			
+                    <!-- BOTON PARA AGREGAR TEXTO -->
+                    <ul class="menu-left">
                         <li <?php echo cssShow($settings, 'show_add_text'); ?>>
-                            <a href="javascript:void(0)" class="add_item_text" title="">
-                                <i class="glyphicons text_bigger"></i> <?php echo lang('designer_menu_add_text'); ?>
+                            <a href="javascript:void(0)" class="add_item_text btn btn-warning btn-addcart" title="">
+                                <?php echo lang('designer_menu_add_text'); ?>
                             </a>
                         </li>
                     </ul>
+                    <!-- FINAL BOTON -->
 
                 </div>
+
                 <h3><i class="fa fa-image"></i> <?php echo lang('designer_menu_add_art'); ?></h3>
                 <div id="dg-layers">
                     <ul>hola
@@ -162,11 +195,14 @@ $addons = $GLOBALS['addons'];
                         <i class="glyphicons t-shirt"></i> <?php echo lang('designer_menu_choose_product'); ?>
                     </a>
                 </li>			
-                <li <?php echo cssShow($settings, 'show_add_text'); ?>>
+
+                <!-- OCULTA enter text -->
+                <li style="display:none;" <?php echo cssShow($settings, 'show_add_text'); ?>>
                     <a href="javascript:void(0)" class="add_item_text" title="">
                         <i class="glyphicons text_bigger"></i> <?php echo lang('designer_menu_add_text'); ?>
                     </a>
                 </li>
+                <!--  -->
 
                 <li <?php echo cssShow($settings, 'show_add_art'); ?>>
                     <a href="javascript:void(0)" class="add_item_clipart" title="" data-toggle="modal" data-target="#dg-cliparts">

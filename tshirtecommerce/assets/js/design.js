@@ -2038,9 +2038,9 @@ var design={
                         
 			var txt = {};
 			
-			txt.text = 'Blu-Nova say Hello';
+			txt.text = 'Enter your text here';
 			txt.color = '#FF0000';
-			txt.fontSize = '24px';
+			txt.fontSize = '20px';
 			txt.fontFamily = 'arial';
 			txt.stroke = 'none';
 			txt.strokew = '0';
