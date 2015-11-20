@@ -23,13 +23,13 @@
 define('DB_NAME', 'lieison_blunova');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'lieison_support');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '@@Support##');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '192.254.187.227');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');

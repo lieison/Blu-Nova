@@ -195,6 +195,9 @@ class Product extends Controllers
 	public function save()
 	{
             
+            
+            
+                
                 //ROOT DEL SISTEMA 
                 $unroot = str_replace(UNROOT, "", ROOT );
             
@@ -203,6 +206,7 @@ class Product extends Controllers
 		$data = $_POST['product'];
                 
                 
+             
                 $attributes = array();
                
                 //CUENTA LOS CAMPOS
@@ -261,6 +265,7 @@ class Product extends Controllers
 			$products 			= $dgClass->getProducts();
 			
 			$is_new 			= true;
+                        
 			if (count($products) > 0)
 			{
 				foreach($products as $product)
@@ -283,6 +288,7 @@ class Product extends Controllers
 				$products[] = $data;
 				$content['products']	= $products;  
 			}
+                      
                         
 		}
                 
@@ -315,6 +321,7 @@ class Product extends Controllers
                         foreach ($dgs->getProducts() as $v){
                             if($v->id == $data['id']){
                                 $id_post = $v->id_post;
+                                $data['id_post'] = $v->id_post ;
                             }
                         }
 
@@ -322,7 +329,29 @@ class Product extends Controllers
                         //EN CASO DE EDICION DE PRECIOS U OTRA COSA QUE SEA WOOCOMMERCES
                         $lieson_               = new LieisonTshirt($unroot);
                         $lieson_->Update_WC($data, $id_post);
+                        
+                        $resing = $content['products'];
+                        
+                        
+                        foreach ($resing as $k=>$pro)
+                        {
+                            if(is_array($pro)){
+                                if($pro['id'] == $data['id']){
+                                    $content['products'][$k]['id_post'] = $data['id_post'];
+                                }
+                            }
+                            
+                        }
+                        
+                        
+                        
                 }
+                
+                
+             //   echo "<pre>" , print_r($data) , "</pre>";
+              //  echo "<br>" ;
+              //  echo "<pre>" , print_r($content) , "</pre>";
+              //  return;
                 
                 
 		
@@ -564,21 +593,15 @@ class Product extends Controllers
 	
 	public function delete($id = 0)
 	{
+            
+         
+                 
 		//get data product.
 		$dgClass 				= new dg();
 		$products 				= $dgClass->getProducts();
 		$categories                             = $dgClass->getProductCategories();
 		
-                
-                $data_prod                              = array();
-                
-                foreach($products as $p){
-                    if($p['id'] == $id){
-                        $data_prod = $p;
-                    }
-                }
-                
-                return;
+       
                 
 		//get id products
 		if(isset($_POST['ids']) && $_POST['ids'] != '')
@@ -594,7 +617,25 @@ class Product extends Controllers
 		}
                 
                 
-		
+               $data_prod                              = array();
+                
+               foreach($products as $p){
+                    if($p->id == $id){
+                        $data_prod = $p;
+                    }
+                }
+                
+                if(isset($data_prod->id_post)){
+                    
+                    
+                    $unroot = str_replace(UNROOT, "", ROOT );
+                    require $unroot . 'wp-content/plugins/' . WC_DIRECTORY .  '/save_tshirt.php';
+                    $lieson     = new LieisonTshirt($unroot);
+                    $lieson->Delete_WC($data_prod->id_post);
+                    
+                }
+                
+               
 		if (count($ids) > 0)
 		{	
 			//remove products.
@@ -636,10 +677,12 @@ class Product extends Controllers
 		}
                 
                 
-               /* $unroot = str_replace(UNROOT, "", ROOT );
-                require $unroot . 'wp-content/plugins/' . WC_DIRECTORY .  '/save_tshirt.php';
-                $lieson     = new LieisonTshirt($unroot);
-                $lieson->Delete_WC($category_data['post_id']);*/
+                
+                   
+          
+                
+                
+               
                 
 		
 		$dgClass->redirect('index.php/product');
