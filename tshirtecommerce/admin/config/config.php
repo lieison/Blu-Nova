@@ -1,4 +1,4 @@
 <?php
-$config['email'] = 'yo';
+$config['email'] = 'Support';
 $config['password'] = '@@Support##';
 ?>

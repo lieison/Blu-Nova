@@ -288,7 +288,7 @@ class Product extends Controllers
                 
                 
                 
-                  
+                
                 if($the_new){
                     
                     
