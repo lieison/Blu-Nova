@@ -58,13 +58,16 @@ var design={
 		});
 		
 		/* menu */
-		$jd('.menu-left a').click(function(){
+		$jd('.menu-left h6').click(function(){
                    
+                      
 			$jd('.menu-left a').removeClass('active');
 			if($jd(this).hasClass('add_item_text')) self.text.create();
 			if($jd(this).hasClass('add_item_team')) self.team.create();
 			if($jd(this).hasClass('add_item_qrcode')) self.qrcode.open();
 			$jd(this).addClass('active');
+                        $jd("#dg-popover").css("display" , "none");
+                        
 		});
 		
 		/* share */
@@ -1996,14 +1999,18 @@ var design={
 		}
 	},
 	text:{
-		getValue: function(){		
+		getValue: function(){	
+                    
+                      
 			var o = {};
 			o.txt 			= $jd('#addEdit').val();
 			o.color 		= $jd('#dg-font-color').css('background-color');
 			o.fontSize 		= $jd('#dg-font-size').text();
 			o.fontFamily 	= $jd('#dg-font-family').text();
+                        
 			if($jd('#font-style-bold').hasClass('active')) o.fontWeight 	= 'bold';
 			var outline 	= $jd('#dg-change-outline-value a').css('left');
+                        
 			outline 		= outline.replace('px', '');
 			if(outline != 0){
 				o.stroke 		= $jd('#dg-outline-color').css('background-color');
@@ -2013,10 +2020,12 @@ var design={
 			return o;
 		},		
 		create: function(){
-			$jd('.ui-lock').attr('checked', false);
+			
+                        $jd('.ui-lock').attr('checked', false);
+                        
 			var txt = {};
 			
-			txt.text = 'Hello';
+			txt.text = 'Blu-Nova say Hello';
 			txt.color = '#FF0000';
 			txt.fontSize = '24px';
 			txt.fontFamily = 'arial';
@@ -2090,6 +2099,7 @@ var design={
 		},
 		add: function(o, type){
 			var item = {};
+                        
 				if (typeof type == 'undefined')
 				{
 					item.type 	= 'text';
@@ -2125,9 +2135,12 @@ var design={
 				div.appendChild(node);
 				div.style.fontSize = o.fontSize;
 				div.style.fontFamily = o.fontFamily;
+                               
 			var cacheText = document.getElementById('cacheText');
+                        
 			cacheText.innerHTML = '';
 			cacheText.appendChild(div);
+                        
 			var $width = cacheText.offsetWidth,
 				$height = cacheText.offsetHeight;
 
@@ -2184,6 +2197,9 @@ var design={
 			item.confirmColor	= false;
 			item.svg = svg;
 			
+                        //ROLI
+                        
+                        
 			design.item.create(item);
 			
 			jQuery(document).triggerHandler( "after.add.text.design", item);
@@ -2658,6 +2674,7 @@ var design={
 			}
 		},
 		create: function(item){		
+                    
 			this.unselect();
 			jQuery('.labView.active .design-area').css('overflow', 'visible');
 			var e = $jd('#app-wrap .active .content-inner'),				
