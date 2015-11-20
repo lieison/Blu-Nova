@@ -1,0 +1,67 @@
+/* Less Variables */
+
+// Fonts
+
+@bodyfont: @body_font, Arial, Helvetica, sans-serif;
+@headingfont: @heading_font, Arial, Helvetica, sans-serif;
+@menufont: @menu_font, Arial, Helvetica, sans-serif;
+
+@fontsize_body: @font_size_body;
+@fontsize_menu: @font_size_menu; 
+/*Bootstrap icon font: 'Glyphicons Halflings'*/
+
+// Colors
+@textcolor: @text_color;
+@headingcolor: @heading_color;
+@menucolor: @menu_color;
+
+@primarycolor: @primary_color;
+@salecolor: @sale_color;
+@saletextcolor: @saletext_color;
+@ratecolor: @rate_color; 
+
+// Defined colors
+@topbarcolor: #999;
+@bordercolor: #eaeaea;
+@footerbg: #000;
+@footercolor: #aaa;
+@sidebartitle: #434342;
+
+.transition (@transition: 0.4s) {
+	-webkit-transition: all @transition ease-out;  
+	-moz-transition:    all @transition ease-out;
+	-ms-transition:     all @transition ease-out; 
+	-o-transition:      all @transition ease-out;  
+}
+
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+.opacity (@opacity) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.translate (@x, @y:0) {
+	-webkit-transform:       translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+.gradient (@startColor, @endColor) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
