@@ -86,16 +86,22 @@ class LieisonTshirt {
         update_post_meta($post_id, '_upsell_ids', array());
         update_post_meta($post_id, '_crosssell_ids', array());
         update_post_meta($post_id, '_edit_last', "1");
-        update_post_meta($post_id, '_regular_price', "");
+       
         update_post_meta($post_id, '_product_image_gallery', $post['image']);
         update_post_meta( $post_id, '_thumbnail_id', $post['image'] );
 
         
         //PRECIO DE VENTA
         
-        update_post_meta($post_id, '_price', $post['price']);
+     
+      
         if( !empty($post['sale_price'])  && $post['sale_price'] != 0){
+             update_post_meta($post_id, '_regular_price', $post['price']);
              update_post_meta($post_id, '_sale_price',$post['sale_price'] );
+        }
+        else
+        {
+               update_post_meta($post_id, '_price', $post['price']);
         }
 
        
@@ -135,10 +141,16 @@ class LieisonTshirt {
         update_post_meta($post_id, '_product_image_gallery', $post['image']);
         update_post_meta( $post_id, '_thumbnail_id', $post['image'] );
         
+        
         if( !empty($post['sale_price'])  && $post['sale_price'] != 0){
+             update_post_meta($post_id, '_regular_price', $post['price']);
              update_post_meta($post_id, '_sale_price',$post['sale_price'] );
         }
-        
+        else
+        {
+               update_post_meta($post_id, '_price', $post['price']);
+        }
+
         return;
         
     }
