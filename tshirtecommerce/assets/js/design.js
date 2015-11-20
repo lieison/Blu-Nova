@@ -60,7 +60,19 @@ var design={
 		/* menu */
 		$jd('.menu-left h6').click(function(){
                    
-                      
+                       
+			$jd('.menu-left a').removeClass('active');
+			if($jd(this).hasClass('add_item_text')) self.text.create();
+			if($jd(this).hasClass('add_item_team')) self.team.create();
+			if($jd(this).hasClass('add_item_qrcode')) self.qrcode.open();
+			$jd(this).addClass('active');
+                        $jd("#dg-popover").css("display" , "none");
+                        
+		});
+                
+                $jd('.menu-left a').click(function(){
+                   
+                       
 			$jd('.menu-left a').removeClass('active');
 			if($jd(this).hasClass('add_item_text')) self.text.create();
 			if($jd(this).hasClass('add_item_team')) self.team.create();
@@ -166,6 +178,7 @@ var design={
 		
 		/* text update */
 		$jd('.text-update').each(function(){
+                      
 			var e = $jd(this);
 			e.bind(e.data('event'), function(){
 				if (e.data('value') != 'undefined')
@@ -2037,6 +2050,8 @@ var design={
 			this.add(txt);			
 		},
 		setValue: function(o){
+                        
+                    
 			$jd('#enter-text').val(o.text);
 			$jd('#txt-fontfamily').html(o.fontFamily);
 			var color = $jd('#txt-color');
@@ -2205,6 +2220,8 @@ var design={
 			jQuery(document).triggerHandler( "after.add.text.design", item);
 		},
 		update: function(lable, value){
+                    
+                      
 			var e = design.item.get();
 			
 			
@@ -2217,6 +2234,7 @@ var design={
 				e.css('transform', 'rotate(0rad)');
 			
 				var obj = document.getElementById(e.attr('id'));
+                               
 				switch(lable){
 					case 'fontfamily':
 						txt[0].setAttributeNS(null, 'font-family', value);
@@ -2340,6 +2358,7 @@ var design={
 			jQuery(document).triggerHandler( "update.text.design", [lable, value]);
 		},
 		updateBack: function(e){
+                        
 			this.setValue(e.item);
 		},
 		reset:function(){
@@ -3083,8 +3102,12 @@ var design={
 			design.print.size();
 		},
 		select: function(e){
+                        
+                        console.log(e);
 			this.unselect();
+                        
 			jQuery('.labView.active .design-area').css('overflow', 'visible');
+                        
 			$jd(e).addClass('drag-item-selected');
 			$jd(e).css('border', '1px dashed #444444');
 			
@@ -3094,13 +3117,16 @@ var design={
 			if ($jd(e).draggable('option', 'disabled') == true)
 				$jd(e).draggable({ disabled: false });
 			
-			design.popover('add_item_'+jQuery(e).data('type'));
+			//design.popover('add_item_'+jQuery(e).data('type'));
 			jQuery('.add_item_'+jQuery(e).data('type')).addClass('active');
 			design.menu(jQuery(e).data('type'));
+                        
 			this.update(e);
 			this.printColor(e);
+                        
 			design.layers.select(jQuery(e).attr('id').replace('item-', ''));
 			jQuery(document).triggerHandler( "select.item.design", e);
+                        
 		},
 		unselect: function(e){
 			$jd('#app-wrap .drag-item-selected').each(function(){

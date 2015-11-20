@@ -19,17 +19,17 @@ $addons = $GLOBALS['addons'];
                     <ul>hola
                     </ul>
                 </div>
-               <ul class="menu-left">
-                   <h6 onclick="javascript:void(0)" class="add_item_text" >
+        
+                   <h3 onclick="javascript:void(0)" class="add_item_text" >
                     <i class="fa fa-text-height"></i> <?php echo lang('designer_menu_add_text'); ?>
-                </h6>
-                </ul>
+                </h3>
+           
                 <div id="dg-layers">
                     
 
                     <!-- ---------------------------------------------- -->
 
-                    <div class="dg-options-content">
+                    <div  class="dg-options-content">
                         <!-- edit text -->
                         <div class="row toolbar-action-text">
                             <div class="col-xs-12">
