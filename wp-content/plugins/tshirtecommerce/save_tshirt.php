@@ -60,7 +60,7 @@ class LieisonTshirt {
 
 
         //WOOCOMMERCES INFORMACION IMPORTANTE 
-        update_post_meta($post_id, '_visibility', 'visible');
+        update_post_meta($post_id, '_visibility', 'hidden');
         update_post_meta($post_id, '_stock_status', 'instock');
 
 
@@ -168,7 +168,6 @@ class LieisonTshirt {
               
           }
           
-        
            return;
         
     }
