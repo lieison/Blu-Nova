@@ -120,7 +120,7 @@ color:#333;
 #dg-layers {
   border: 0 none;
   border-radius: 0 0 4px 4px;
-  max-height: 115px;
+  max-height: 350px;
 }
 #product-thumbs {
   display: inline-block;
@@ -256,10 +256,10 @@ border-color:#007AFF;
   color: #666666;
   font-family: arial;
   font-size: 12px;
-  overflow: auto;
+  overflow: hidden;
   padding: 10px;
   text-align: left;
-  max-height: 230px;
+  max-height: 350px;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   margin-top: -8px;

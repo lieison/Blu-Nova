@@ -19,10 +19,14 @@ $addons = $GLOBALS['addons'];
                     <ul>hola
                     </ul>
                 </div>
-                <h3><i class="fa fa-text-height"></i> <?php echo lang('designer_menu_add_text'); ?></h3>
+                 <ul class="menu-left">
+                <a  href="javascript:void(0)" class="add_item_text" >
+                    <i class="fa fa-text-height"></i> <?php echo lang('designer_menu_add_text'); ?></a>
+                </ul>
                 <div id="dg-layers">
+                    
 
-                    <!-- |||||||||||||||||||||||||||||||||||||||| -->
+                    <!-- ---------------------------------------------- -->
 
                     <div class="dg-options-content">
                         <!-- edit text -->
@@ -134,6 +138,14 @@ $addons = $GLOBALS['addons'];
                     
                     <!-- ---------------------------------------------- -->
 
+
+                    <ul class="menu-left">			
+                        <li <?php echo cssShow($settings, 'show_add_text'); ?>>
+                            <a href="javascript:void(0)" class="add_item_text" title="">
+                                <i class="glyphicons text_bigger"></i> <?php echo lang('designer_menu_add_text'); ?>
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
                 <h3><i class="fa fa-image"></i> <?php echo lang('designer_menu_add_art'); ?></h3>

@@ -59,6 +59,7 @@ var design={
 		
 		/* menu */
 		$jd('.menu-left a').click(function(){
+                   
 			$jd('.menu-left a').removeClass('active');
 			if($jd(this).hasClass('add_item_text')) self.text.create();
 			if($jd(this).hasClass('add_item_team')) self.team.create();
