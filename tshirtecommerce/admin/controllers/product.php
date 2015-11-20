@@ -570,6 +570,16 @@ class Product extends Controllers
 		$categories                             = $dgClass->getProductCategories();
 		
                 
+                $data_prod                              = array();
+                
+                foreach($products as $p){
+                    if($p['id'] == $id){
+                        $data_prod = $p;
+                    }
+                }
+                
+                return;
+                
 		//get id products
 		if(isset($_POST['ids']) && $_POST['ids'] != '')
 		{
