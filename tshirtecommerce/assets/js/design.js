@@ -1475,13 +1475,20 @@ var design={
 			design.ajax.getPrice();
 		},
 		changeDesign: function(e){
+                    
+                   
+                        console.log(e);
 			var a = document.getElementById('product-thumbs').getElementsByTagName('a');
+                       
 			this.changeView(a[0], 'front');
+                        
 			jQuery('#app-wrap .product-design').html('');
-			
 			var ids = jQuery('.product-detail.active').attr('id');
 			var id = ids.replace('product-detail-', '');
+                        
 			product_id = id;
+                        
+                        console.log("ID->" + id);
 			
 			if (typeof this.product[product_id] == 'undefined') return;
 			
@@ -1559,6 +1566,10 @@ var design={
 								
 		},
 		changeProduct: function(e, product){
+                    
+                    
+                        
+                         
 			var id 	= jQuery(e).data('id');
 			jQuery('.product-list .product-box').removeClass('active');
 			jQuery(e).addClass('active');
@@ -1585,7 +1596,8 @@ var design={
 					html = html + 		'<div>'+product.description+'</div>';
 					html = html + 	'</div>';
 				div.innerHTML = html;
-				jQuery('#dg-products .products-detail').append(div);
+                                jQuery('#dg-products .products-detail').html('');
+				jQuery('#dg-products .products-detail').prepend(div);
 			}
 			jQuery('#product-detail-' + id).addClass('active');
 			jQuery('#dg-products .products-detail').show('slow');
@@ -1593,12 +1605,15 @@ var design={
 		},
 		productCate: function(id){
                         
+                   
+                        jQuery('.product-list').html('');
 			var seft = this;
-			if (typeof seft.products[id] != 'undefined'){
-				seft.addProduct(seft.products[id]);
-			}
-			else{
+			//if (typeof seft.products[id] != 'undefined'){
+				//seft.addProduct(seft.products[id]);
+			//}
+			//else{
 				jQuery('#dg-products .modal-body').addClass('loading');
+                                jQuery('.product-list').addClass('loading');
 				jQuery.ajax({
 					type: "POST",
 					dataType: "json",
@@ -1615,7 +1630,7 @@ var design={
 				}).always(function(){
 					jQuery('#dg-products .modal-body').removeClass('loading');
 				});
-			}
+			//}
 		},
 		addProduct: function(products){	
                     
@@ -1627,20 +1642,33 @@ var design={
 			
 			var seft = this;
                         //@@EDIT TITLE 
-                        jQuery('.product-list').append("<select class='form-control input-sm'>");
+                        
+                   
+                       
+                        jQuery('.product-list').html("<br>  <div id='prod-data-scroll' style='overflow:scroll;height:200px;'>");
+                        
 			jQuery.each(products, function(i, product){
-				var div = document.createElement('div');
-					div.setAttribute('data-id', product.id);
-					div.className = 'product-box col-xs-6 col-sm-4 col-md-12';
-				jQuery(div).click(function(){ seft.changeProduct(this, product); } );			
-				
-				//html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
-					//div.innerHTML = html;
-                                html = "<option value='' >" + product.title + "</option>";
-				
-				jQuery('.product-list').append(div);
+                            
+                                var div = document.createElement('div');
+				div.setAttribute('data-id', product.id);
+				div.className = 'product-box col-xs-6 col-sm-4 col-md-12';
+                                        
+                                  
+				jQuery(div).click(function(){
+                                   
+                                    seft.changeProduct(this, product); 
+                                    seft.changeDesign(jQuery("#product-detail-" + product.id));
+                                } );			
+				//jQuery(div).click(function(){  } );	
+                                
+				html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
+					
+                               //html = "<option value=''>hola</option>";
+				div.innerHTML = html;
+				jQuery('#prod-data-scroll').append(div);
 			});
-                        jQuery('.product-list').append("</select>");
+                        
+                      jQuery('.product-list').append("</div>");
                         
 		},
 		changeCategory: function(e)

@@ -2,6 +2,9 @@
 $settings = $GLOBALS['settings'];
 $addons = $GLOBALS['addons'];
 ?>
+
+
+
 <div class="col-left">
 
     <!-- BOTONES OCULTOS (product info & size chart) -->
@@ -42,15 +45,17 @@ $addons = $GLOBALS['addons'];
                     <div class="row">
                         <!-- list product category -->
                         <div class="product-list col-sm-12">
+                          
                         </div>
 
                         <!-- product detail -->
                         <div class="products-detail col-sm-12">
-                            <button type="button" class="btn btn-danger btn-sm" id="close-product-detail">Close</button>
+                           <!-- <button type="button" class="btn btn-danger btn-sm" id="close-product-detail">Close</button> -->
                         </div>
                     </div>
                     
-                    <button type="button" class="btn btn-primary" id="loading-change-product" data-loading-text="<?php echo lang('designer_loading_btn'); ?>..." onclick="design.products.changeDesign(this)"><?php echo lang('designer_product_change_product'); ?></button>
+                   <!-- <button type="button" class="btn btn-primary" id="loading-change-product" data-loading-text="<?php echo lang('designer_loading_btn'); ?>..." onclick="design.products.changeDesign(this)"><?php echo lang('designer_product_change_product'); ?>
+                    </button> -->
                     
                 </div>
 
