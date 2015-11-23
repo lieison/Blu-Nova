@@ -1613,7 +1613,16 @@ var design={
 			//}
 			//else{
 				jQuery('#dg-products .modal-body').addClass('loading');
-                                jQuery('.product-list').addClass('loading');
+                                
+                                var is_mozilla = navigator.userAgent.search("Firefox") > -1;
+                                if(is_mozilla){
+                                     jQuery('.product-list').html("<br><div align='center'><b><img src='assets/images/ajax-loader.gif' ></b></div>");
+                                }
+                                else{
+                                     jQuery('.product-list').addClass('loading');
+                                }
+                               
+                                
 				jQuery.ajax({
 					type: "POST",
 					dataType: "json",
@@ -1621,7 +1630,7 @@ var design={
 					data: { id: id }
 				}).done(function( data ) {
                                     
-                                       
+                                      
 					jQuery.each(data.products, function(i, product){
 						seft.product[product.id] = product;
 					});
@@ -1636,6 +1645,7 @@ var design={
                     
                         //@@EDIT
 			
+                        jQuery('.product-list').removeClass('loading');
 			jQuery('.product-list').html('');
 			
 			if (products.length == 0) return;
@@ -1645,27 +1655,42 @@ var design={
                         
                    
                        
-                        jQuery('.product-list').html("<br>  <div id='prod-data-scroll' style='overflow:scroll;height:200px;'>");
+                        jQuery('.product-list').html("<br><div id='prod-data-scroll' style='overflow:scroll;height:200px;'>");
                         
 			jQuery.each(products, function(i, product){
                             
                                 var div = document.createElement('div');
 				div.setAttribute('data-id', product.id);
-				div.className = 'product-box col-xs-6 col-sm-4 col-md-12';
-                                        
+                                
+                                //COMPATIBILIDAD CON MOZILLA FIREFOX
+                                
                                   
 				jQuery(div).click(function(){
                                    
                                     seft.changeProduct(this, product); 
                                     seft.changeDesign(jQuery("#product-detail-" + product.id));
                                 } );			
-				//jQuery(div).click(function(){  } );	
+				
                                 
-				html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
-					
-                               //html = "<option value=''>hola</option>";
-				div.innerHTML = html;
-				jQuery('#prod-data-scroll').append(div);
+                                var is_mozilla = navigator.userAgent.search("Firefox") > -1;
+                                if(is_mozilla){
+                                    
+                                    div.className = 'product-box col-xs-6 col-sm-4 col-md-4';
+                                    html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
+                                    div.innerHTML =  html;
+                                    jQuery('#prod-data-scroll').append("<br>");
+                                    jQuery('#prod-data-scroll').append( div);
+                                }
+                                else{
+                                    div.className = 'product-box col-xs-6 col-sm-4 col-md-12';
+                                    html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
+                                    div.innerHTML = html;
+                                    jQuery('#prod-data-scroll').append(div);
+                                }
+				
+                             
+				
+				
 			});
                         
                       jQuery('.product-list').append("</div>");
