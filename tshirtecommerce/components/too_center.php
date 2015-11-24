@@ -6,7 +6,7 @@ $addons = $GLOBALS['addons'];
 	<!-- Begin sidebar  que no se muestra -->
 	<div style="display:none;" id="dg-sidebar">
 		<div class="dg-tools">
-			<button type="button" class="btn btn-default btn-sm" onclick="design.save()">
+                    <button type="button"  class="btn btn-default btn-sm" onclick="design.save()">
 				<i class="fa fa-save"></i>
 				<small><?php echo lang('designer_save_btn'); ?></small>
 			</button>
@@ -71,31 +71,31 @@ $addons = $GLOBALS['addons'];
 			<!-- BEGIN help functions -->
 			<div id="dg-help-functions">
 				<div class="btn-group-vertical" role="group" aria-label="Group functions">
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_clipart_edit_flip'); ?>" onclick="design.tools.flip('x')">
-						<i class="glyphicons transfer glyphicons-12"></i>
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_clipart_edit_flip'); ?>" onclick="design.tools.flip('x')">
+                                            <i class="glyphicon glyphicon-resize-horizontal"></i>
 					</span>					
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_horizontal'); ?>" onclick="design.tools.move('vertical')">
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_horizontal'); ?>" onclick="design.tools.move('vertical')">
 						<i class="glyphicon glyphicon-object-align-vertical"></i>
 					</span>
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_vertical'); ?>" onclick="design.tools.move('horizontal')">
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_vertical'); ?>" onclick="design.tools.move('horizontal')">
 						<i class="glyphicon glyphicon-object-align-horizontal"></i>
 					</span>	
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_left'); ?>" onclick="design.tools.move('left')">
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_left'); ?>" onclick="design.tools.move('left')">
 						<i class="fa fa-chevron-left"></i>
 					</span>	
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_right'); ?>" onclick="design.tools.move('right')">
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_right'); ?>" onclick="design.tools.move('right')">
 						<i class="fa fa-chevron-right"></i>
 					</span>	
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_up'); ?>" onclick="design.tools.move('up')">
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_up'); ?>" onclick="design.tools.move('up')">
 						<i class="fa fa-chevron-up"></i>
 					</span>	
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_down'); ?>" onclick="design.tools.move('down')">
+					<span  style="background-color:#601466;color:white;"class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_align_down'); ?>" onclick="design.tools.move('down')">
 						<i class="fa fa-chevron-down"></i>
 					</span>
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_team_remove'); ?>" onclick="design.tools.remove()">
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_team_remove'); ?>" onclick="design.tools.remove()">
 						<i class="fa fa-trash-o"></i>
 					</span>
-					<span class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_top_reset'); ?>" onclick="design.tools.reset(this)">
+					<span style="background-color:#601466;color:white;" class="btn btn-default" data-placement="left" data-toggle="tooltip" data-original-title="<?php echo lang('designer_top_reset'); ?>" onclick="design.tools.reset(this)">
 						<i class="fa fa-refresh"></i>
 					</span>
 					<?php $addons->view('tools'); ?>

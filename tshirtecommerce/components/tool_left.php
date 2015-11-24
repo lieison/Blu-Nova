@@ -179,7 +179,7 @@ $addons = $GLOBALS['addons'];
                     <!-- BOTON PARA AGREGAR TEXTO -->
                     <ul class="menu-left">
                         <li <?php echo cssShow($settings, 'show_add_text'); ?>>
-                            <a href="javascript:void(0)" class="add_item_text btn btn-warning btn-addcart" title="">
+                            <a href="javascript:void(0)" style="background-color:#601466;color:white;" class="add_item_text btn " title="">
                                 <?php echo lang('designer_menu_add_text'); ?>
                             </a>
                         </li>
@@ -196,21 +196,21 @@ $addons = $GLOBALS['addons'];
             </div>
 
             <ul class="menu-left">                            
-                <li <?php echo cssShow($settings, 'show_product'); ?>>
+                <li style="display:none;" <?php echo cssShow($settings, 'show_product'); ?>>
                     <a href="javascript:void(0)" class="view_change_products" title="" data-toggle="modal" data-target="#dg-products">
                         <i class="glyphicons t-shirt"></i> <?php echo lang('designer_menu_choose_product'); ?>
                     </a>
                 </li>			
 
                 <!-- OCULTA enter text -->
-                <li style="display:none;" <?php echo cssShow($settings, 'show_add_text'); ?>>
+                <li style="display:none;" style="display:none;" <?php echo cssShow($settings, 'show_add_text'); ?>>
                     <a href="javascript:void(0)" class="add_item_text" title="">
                         <i class="glyphicons text_bigger"></i> <?php echo lang('designer_menu_add_text'); ?>
                     </a>
                 </li>
                 <!--  -->
 
-                <li <?php echo cssShow($settings, 'show_add_art'); ?>>
+                <li  style="display:none;" <?php echo cssShow($settings, 'show_add_art'); ?>>
                     <a href="javascript:void(0)" class="add_item_clipart" title="" data-toggle="modal" data-target="#dg-cliparts">
                         <i class="glyphicons picture"></i> <?php echo lang('designer_menu_add_art'); ?>
                     </a>

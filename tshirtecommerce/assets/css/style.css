@@ -57,7 +57,7 @@ width:100%;
   padding: 0;
 }
 .menu-left > li {
-  background:#FFF;
+  background:#601466 ;
   border-bottom:1px solid #CCCCCC;
   clear: both;
   display: block;
@@ -76,7 +76,7 @@ width:100%;
   z-index: 1000;
 }
 .menu-left li a {
-  color: #000000;
+  color: white;
   display: block;
   font-family: Garamond;
   font-size: 16px;
@@ -232,11 +232,11 @@ border-color:#007AFF;
   margin-top: 0;
 }
 .ui-accordion .ui-accordion-header {
-  background:#FCFCFC;  
+  background:#601466 ;  
   border-radius: 0;
   border-style: none none solid;
   border-width: 0 0 1px;
-  color: #000000;
+  color: white;
   cursor: pointer;
   display: block;
   font-family: Garamond;

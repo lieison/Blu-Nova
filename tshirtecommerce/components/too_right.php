@@ -52,11 +52,11 @@ $addons = $GLOBALS['addons'];
                     <div id="product-price" <?php echo cssShow($settings, 'show_price', 1); ?>>
                         <span class="product-price-title"><?php echo lang('designer_right_total'); ?></span>
                         <div class="product-price-list">
-                            <span id="product-price-old">
-                                <?php echo $settings->currency_symbol; ?><span class="price-old-number"></span>
+                            <span style="color:#601466;" id="product-price-old">
+                                <?php echo $settings->currency_symbol; ?><span style="color:#601466;" class="price-old-number"></span>
                             </span>
-                            <span id="product-price-sale">
-                                <?php echo $settings->currency_symbol; ?><span class="price-sale-number"></span>
+                            <span style="color:#601466;" id="product-price-sale">
+                                <?php echo $settings->currency_symbol; ?><span style="color:#601466;"  class="price-sale-number"></span>
                             </span>
                         </div>
                     
@@ -67,7 +67,7 @@ $addons = $GLOBALS['addons'];
                         
                     </div>
                     <?php $addons->view('cart'); ?>
-                    <button <?php echo cssShow($settings, 'show_add_to_cart', 1); ?> type="button" class="btn btn-warning btn-addcart" onclick="design.ajax.addJs(this)"><i class="glyphicons shopping_cart"></i><?php echo lang('designer_right_buy_now'); ?></button>								
+                    <button style="background-color:#601466;color:white;" <?php echo cssShow($settings, 'show_add_to_cart', 1); ?> type="button" class="btn btn-warning btn-addcart" onclick="design.ajax.addJs(this)"><i class="glyphicons shopping_cart"></i><?php echo lang('designer_right_buy_now'); ?></button>								
                 </div>
             </div>
         </div>
