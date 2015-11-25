@@ -114,10 +114,21 @@ var design={
 		design.products.sizes();
 		
 		$jd('.add_item_clipart').click(function(){
+                    
 			self.designer.art.categories(true, 0);
 			if( jQuery('#dag-list-arts').html() == '')
 				self.designer.art.arts('');
 		});
+                
+                
+                $jd('#clipart_design_1').click(function(){
+			self.designer.art.categories(true, 0);
+			if( jQuery('#dag-list-arts').html() == '')
+				self.designer.art.arts('');
+		});
+                
+               
+                
 		
 		$jd('.add_item_mydesign').click(function(){
 			self.ajax.mydesign();
@@ -134,7 +145,21 @@ var design={
 			jQuery('#dag-list-arts').show('slow');
 			jQuery('#arts-add').hide();
 			jQuery('#arts-pagination').css('display', 'block');
+                        jQuery('#art_close').css('display', 'block');
+                       
 		});
+                
+                $jd('#art_close').click(function(){
+                   
+			jQuery('#dag-art-detail').hide('slow');
+			jQuery('#dag-list-arts').show('slow');
+			jQuery('#arts-add').hide();
+			jQuery('#arts-pagination').css('display', 'none');
+                        jQuery('#art_close').css('display', 'none');
+                       
+		});
+                
+                
 		
 		/* layers-toolbar control */
 		jQuery('.layers-toolbar button').click(function(){
@@ -951,17 +976,22 @@ var design={
 				}
 			},
 			arts: function(cate_id, start)
-			{				
+			{		
+                            
+                              
 				if (typeof start == 'undefined') start = 0;								
 				if (typeof cate_id == 'undefined') cate_id = 0;								
 				
 				var self = this;
 				var parent = document.getElementById('dag-list-arts');				
 				parent.innerHTML = '';
+                          
+                               
 				jQuery('#dag-art-detail').hide('slow');
 				jQuery('#dag-list-arts').show('slow');
 				jQuery('#arts-add').hide();
 				jQuery('#dag-list-arts').addClass('loading');
+                                jQuery('#art_close').css('display', 'none');
 				
 				var keyword = jQuery('#art-keyword').val();
 				keyword = keyword.toLowerCase();
@@ -969,6 +999,8 @@ var design={
 					dataType: "json",					
 					url: siteURL + "ajax.php?type=arts"
 				}).done(function( data ) {
+                                    
+                                       
 					if (data == null || data.count == 0)
 					{
 						jQuery('#dag-list-arts').removeClass('loading');
@@ -1011,7 +1043,8 @@ var design={
 							
 							var url = art.url;
 							var div = document.createElement('div');
-								div.className = 'col-xs-6 col-sm-4 col-md-2 box-art';
+								//div.className = 'col-xs-6 col-sm-4 col-md-12 box-art';
+                                                                div.className = ' box-art';
 							var a = document.createElement('a');
 								a.setAttribute('title', art.title);
 								a.setAttribute('class', 'thumbnail');
@@ -1030,6 +1063,7 @@ var design={
 							a.innerHTML = img;
 							div.appendChild(a);
 							parent.appendChild(div);
+                                                       
 						}					
 						if (data.count > 1)
 						{
@@ -1105,6 +1139,8 @@ var design={
 			},
 			artDetail: function(e)
 			{
+                            
+                               jQuery('#art_close').css('display', 'block');
 				var id = jQuery(e).data('id');
 				jQuery('.box-art-detail').css('display', 'none');
 				jQuery('#arts-pagination').css('display', 'none');
@@ -1117,7 +1153,7 @@ var design={
 							+ 		'<img class="thumbnail img-responsive" src="'+jQuery(e).data('medium')+'" alt="">'
 							+ 	'</div>'
 							+ 	'<div class="col-xs-7 col-md-7 art-detail-right">'							
-							+ 	'</div>';
+							+ 	'</div> ';
 					div.innerHTML = html;
 					jQuery('#dag-art-detail').append(div);					
 					jQuery('.art-detail-price').html('');
