@@ -146,6 +146,7 @@ var design={
 			jQuery('#arts-add').hide();
 			jQuery('#arts-pagination').css('display', 'block');
                         jQuery('#art_close').css('display', 'block');
+                      
                        
 		});
                 
@@ -1173,7 +1174,10 @@ var design={
 				jQuery('#dag-art-detail').show('slow');
 				jQuery('#arts-add').show();
 				jQuery('#arts-add button').unbind('click');
-				jQuery('#arts-add button').bind('click', function(event){design.art.create(e);});
+				jQuery('#arts-add button').bind('click', function(event){
+                                    design.art.create(e);
+                                  
+                                });
 				jQuery('#arts-add button').button('reset');
 			},
 			treeCategories: function(categories, e, system)
@@ -1885,6 +1889,7 @@ var design={
 		create: function(){
 			design.popover('add_item_team');
 			jQuery('.popover-title').children('span').html(lang.text.teamTitle);
+                       
 		},
 		addName: function(e){
 			if (jQuery(e).is(':checked') == true)
@@ -2676,7 +2681,8 @@ var design={
 				}
 				var src = item.imgMedium;
 				src = src.replace('http://', '');
-				img.src = urlCase +'?src='+ src +'&w=250&h=atuto&q=90';				
+				img.src = urlCase +'?src='+ src +'&w=250&h=atuto&q=90';	
+                               
 			}
 			else
 			{
@@ -2698,6 +2704,7 @@ var design={
 							$jd('.modal').modal('hide');
 							var e = design.item.get();
 							design.item.setup(e[0].item);
+                                                         jQuery("#dg-popover").css("display" , "none");
 					},
 					failure: function(errMsg) {
 						alert(errMsg+ '. '+lang.designer.tryagain);
@@ -2735,6 +2742,7 @@ var design={
 	},
 	item:{
 		designini: function(items, color){
+                 
 			if (Object.keys(items.design).length > 0)
 			{
 				var postion = 'front';
@@ -3203,7 +3211,7 @@ var design={
 			design.print.size();
 		},
 		select: function(e){
-                        
+                      
                         console.log(e);
 			this.unselect();
                         
@@ -3380,7 +3388,8 @@ var design={
 			design.print.colors();
 			design.ajax.getPrice();
 		},
-		update: function(e){			
+		update: function(e){	
+                     
 			var o = $jd(e),
 				type = o.data('type'),
 				css = e.style;
@@ -3401,7 +3410,8 @@ var design={
 			
 			switch(type){
 				case 'clipart':
-					design.art.update(e);
+                                    //DESACTIVACION DE DESIGN CLIP-PART
+					//design.art.update(e);
 					break;
 				case 'text':
 					design.text.updateBack(e);
@@ -3431,6 +3441,8 @@ var design={
 	layers:{
 		select: function(index)
 		{
+                    
+                       
 			jQuery('#layers li').removeClass('active');
 			jQuery('#layer-'+index).addClass('active');
 			var o = jQuery('#item-'+index);

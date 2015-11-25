@@ -233,7 +233,7 @@ $addons = new addons();
 	<!-- END modal -->
 	
 	<!-- BEGIN popover -->
-	<div class="popover right" id="dg-popover">
+        <div style="" class="popover right" id="dg-popover">
 		<div class="arrow"></div>
 		<h3 class="popover-title">
 			<span><?php echo $lang['designer_clipart_edit_size_position']; ?></span> 
