@@ -14,7 +14,7 @@ if(is_ssl()){
 	$road_opt['logo_main']['url'] = str_replace('http:', 'https:', $road_opt['logo_main']['url']);
 }
 ?>
-		<div class="header-container layout1">
+<div class="header-container layout1">
 			<?php if(isset($road_opt)) { ?>
 				<div class="top-bar">
 					<div class="container">

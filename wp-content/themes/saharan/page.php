@@ -16,11 +16,7 @@ global $road_opt;
 get_header();
 ?>
 <div class="main-container default-page">
-	<header class="entry-header">
-		<div class="container">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-		</div>
-	</header>
+	
 	<div class="clearfix"></div>
 	<div class="container">
 		

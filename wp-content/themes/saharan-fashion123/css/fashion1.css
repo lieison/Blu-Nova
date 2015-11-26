@@ -1,7 +1,7 @@
 body {
-  color: #555555 !important;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif !important;
-  font-size: 13px !important;
+  color: #444444 !important;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
 }
 h1,
 h2,
@@ -9,8 +9,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  color: #222222;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 ul,
@@ -51,7 +51,7 @@ textarea {
 }
 .header-container .top-bar .language #lang_sel {
   float: left;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 .header-container .top-bar .language #lang_sel ul li > a.lang_sel_sel {
   color: #fff;
@@ -73,7 +73,7 @@ textarea {
 }
 .header-container .top-bar .language #lang_sel ul ul li a:hover {
   color: #fff;
-  background: #94d6be;
+  background: #f1f1f1;
 }
 .header-container .top-bar .currency-switcher {
   display: inline-block;
@@ -111,7 +111,7 @@ textarea {
   line-height: 26px;
 }
 .header-container .top-bar .currency-switcher .chosen-container.chosen-with-drop .chosen-drop .chosen-results li.highlighted {
-  background: #94d6be;
+  background: #f1f1f1;
 }
 .header-container .top-bar .top-menu ul li a {
   font-size: 13px;
@@ -165,7 +165,7 @@ textarea {
   color: #bbb;
 }
 .header-container .header .header-inner .header-search .widget.widget_product_search #searchform #wsearchsubmit:hover {
-  color: #94d6be;
+  color: #f1f1f1;
 }
 .header-container .header .header-inner .widget.widget_shopping_cart {
   margin: 6px 0;
@@ -190,7 +190,7 @@ textarea {
 .header-container .header .header-inner .follow-us label {
   display: inline-block;
   vertical-align: middle;
-  color: #555555;
+  color: #444444;
 }
 .header-container .header .header-inner .follow-us ul {
   display: inline-block;
@@ -214,9 +214,9 @@ textarea {
 }
 .header-container .header .nav-container .horizontal-menu #mega_main_menu > .menu_holder .menu_inner > ul > li > ul.mega_dropdown > li > a .link_text {
   font-weight: 400;
-  font-size: 16px;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
-  color: #333333;
+  font-size: 10px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: #444444;
 }
 .header-container .header .nav-container .horizontal-menu #mega_main_menu > .menu_holder .menu_inner > ul > li > ul.mega_dropdown > li > ul.mega_dropdown > li > a .link_text {
   font-size: 13px;
@@ -232,13 +232,13 @@ textarea {
   -o-transform: scale(1);
 }
 .header-container .header .nav-container .horizontal-menu #mega_main_menu > .menu_holder .menu_inner > ul > li > a.item_link .link_content .link_text {
-  font-size: 16px;
+  font-size: 10px;
   text-transform: uppercase;
   font-weight: 400;
   padding: 15px 20px;
   line-height: 25px;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
-  color: #333333;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: #444444;
 }
 .header-container .header .nav-container .horizontal-menu #mega_main_menu > .menu_holder .menu_inner > ul > li > a.item_link .link_content .link_text:before {
   content: "";
@@ -350,7 +350,7 @@ textarea {
   border: 2px solid #000;
   border-radius: 0;
   box-shadow: none;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: #000;
   display: inline-block;
   font-size: 14px;
@@ -553,7 +553,7 @@ textarea {
   font-size: 9px;
 }
 .main-container .shop-products .item-col .product-wrapper .list-col8 .actions .action-buttons .quickviewbtn a.quickview:hover {
-  background: #94d6be;
+  background: #f1f1f1;
 }
 .main-container .shop-products .item-col .product-wrapper .list-col8 .actions .action-buttons .add-to-links {
   display: inline-block;
@@ -580,7 +580,7 @@ textarea {
   font-size: 9px;
 }
 .main-container .shop-products .item-col .product-wrapper .list-col8 .actions .action-buttons .add-to-links .yith-wcwl-add-to-wishlist a:hover {
-  background: #94d6be;
+  background: #f1f1f1;
 }
 .main-container .shop-products .item-col .product-wrapper .list-col8 .actions .action-buttons .add-to-links .compare-button {
   display: inline-block;
@@ -605,13 +605,13 @@ textarea {
   font-size: 9px;
 }
 .main-container .shop-products .item-col .product-wrapper .list-col8 .actions .action-buttons .add-to-links .compare-button a.compare:hover {
-  background: #94d6be;
+  background: #f1f1f1;
 }
 .main-container .shop-products .item-col .product-wrapper .price-box {
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
-  color: #333333;
+  color: #222222;
 }
 .main-container .shop-products .item-col .product-wrapper .price-box del .amount {
   font-size: 11px;
@@ -626,7 +626,7 @@ textarea {
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 400;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   border: 0;
   margin: 0;
 }
@@ -635,10 +635,10 @@ textarea {
   border: 0;
 }
 .main-container .product-view .summary.single-product-info .price-box .price {
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #333333;
+  color: #222222;
 }
 .main-container .product-view .summary.single-product-info .price-box .price del .amount {
   font-size: 14px;
@@ -727,7 +727,7 @@ textarea {
   padding: 0 0 15px;
 }
 .main-container .product-view .related_products_widget .widget-title {
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   line-height: 32px;
@@ -787,8 +787,8 @@ textarea {
   border: 0;
   background: none;
   text-decoration: underline;
-  border-color: #94d6be;
-  color: #94d6be;
+  border-color: #f1f1f1;
+  color: #f1f1f1;
   box-shadow: none;
 }
 .main-container .product-view .product .woocommerce-tabs ul.tabs li a {
@@ -798,7 +798,7 @@ textarea {
   font-weight: 400;
   border-bottom: 1px solid transparent;
   line-height: 18px;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 .main-container .product-view .product .woocommerce-tabs ul.tabs li a:after {
   display: none;
@@ -806,7 +806,7 @@ textarea {
 .main-container .product-view .upsells_products_widget .widget-title {
   font-size: 14px;
   text-transform: uppercase;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   text-align: left;
 }
 .main-container .product-view .upsells_products_widget .widget-title:after {
@@ -879,7 +879,7 @@ textarea {
   -o-transition: all 0.3s ease-out;
 }
 .main-container .banner-home-content1 .banner-box .text-container .text h2 {
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 23px;
   text-transform: uppercase;
   margin: 0;
@@ -911,7 +911,7 @@ textarea {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   margin: 0 0 5px;
 }
 .main-container .banner-home-content2 .banner-box p {
@@ -953,7 +953,7 @@ textarea {
   font-size: 16px;
   color: #434343;
   text-transform: uppercase;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 .main-container .group-modul .newsletter-container .widget_wysija_cont .widget_wysija {
@@ -999,7 +999,7 @@ textarea {
 }
 .woocommerce .woocommerce-breadcrumb {
   font-size: 13px;
-  color: #94d6be;
+  color: #f1f1f1;
   text-transform: capitalize;
   margin: 20px 0;
 }
@@ -1008,7 +1008,7 @@ textarea {
   text-transform: capitalize;
 }
 .woocommerce .woocommerce-breadcrumb a:hover {
-  color: #94d6be;
+  color: #f1f1f1;
 }
 .woocommerce .woocommerce-breadcrumb span {
   color: #666;
@@ -1033,7 +1033,7 @@ textarea {
   margin-top: -20px;
 }
 .wrapper .slick-slider button:hover {
-  background: #94d6be;
+  background: #f1f1f1;
 }
 .wrapper .slick-slider button:before {
   line-height: 21px;
@@ -1062,7 +1062,7 @@ textarea {
   margin-bottom: 20px;
 }
 .footer .widget .widget-title {
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -1079,7 +1079,7 @@ textarea {
   line-height: 24px;
 }
 .footer .widget ul.nav_menu li a:hover {
-  color: #94d6be;
+  color: #f1f1f1;
 }
 .footer .widget.widget_contact_us ul li {
   position: relative;
@@ -1137,7 +1137,7 @@ textarea {
   text-decoration: none;
 }
 .footer .copyright-info a:hover {
-  color: #94d6be;
+  color: #f1f1f1;
 }
 #secondary .widget .widget-title {
   line-height: 32px;
@@ -1157,7 +1157,7 @@ textarea {
 }
 #secondary .widget .widget-title span {
   color: #fff;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -1171,7 +1171,7 @@ textarea {
   background: #333;
 }
 #secondary .widget.widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle.ui-state-hover {
-  background: #94d6be;
+  background: #f1f1f1;
 }
 #secondary .widget.widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
   background: #ccc;
@@ -1199,7 +1199,7 @@ textarea {
 }
 #secondary ul li a,
 #secondary ol li a {
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 #secondary ul li a:before,
 #secondary ol li a:before {
@@ -1210,13 +1210,13 @@ textarea {
 }
 .layout3.header-container .top-bar {
   background: none;
-  color: #555555;
+  color: #444444;
 }
 .layout3.header-container .top-bar label {
-  color: #555555;
+  color: #444444;
 }
 .layout3.header-container .top-bar .language #lang_sel ul li > a.lang_sel_sel {
-  color: #555555;
+  color: #444444;
   font-size: 14px;
   line-height: 38px;
 }
@@ -1225,7 +1225,7 @@ textarea {
 }
 .layout3.header-container .top-bar .currency-switcher .chosen-container .chosen-single {
   font-size: 14px;
-  color: #555555;
+  color: #444444;
 }
 .layout3.header-container .top-bar .currency-switcher .chosen-container .chosen-single div b:before {
   content: "\f0d7";
@@ -1233,10 +1233,10 @@ textarea {
 }
 .layout3.header-container .top-bar .top-menu ul li a {
   font-size: 14px;
-  color: #555555;
+  color: #444444;
 }
 .layout3.header-container .top-bar .top-menu ul li a:hover {
-  color: #555555;
+  color: #444444;
   text-decoration: underline;
 }
 .layout3.header-container .header .logo {
@@ -1280,7 +1280,7 @@ textarea {
   content: "\f0d7";
   display: inline-block;
   position: absolute;
-  color: #333333;
+  color: #444444;
   font-size: 12px;
   line-height: 40px;
   right: 6;
@@ -1312,7 +1312,7 @@ textarea {
   content: "\f0d7";
   display: inline-block;
   position: absolute;
-  color: #333333;
+  color: #444444;
   font-size: 12px;
   line-height: 40px;
   right: 6;
@@ -1322,7 +1322,7 @@ textarea {
 }
 .layout3.header-container .header .nav-container .horizontal-menu .primary-menu-container ul.nav-menu > li > a {
   padding: 10px 15px;
-  color: #333333;
+  color: #444444;
 }
 .layout3.header-container .header .nav-container .horizontal-menu .primary-menu-container ul.nav-menu > li > a:before {
   display: none;
@@ -1340,7 +1340,7 @@ textarea {
 }
 .layout3.header-container .header .nav-container .horizontal-menu div.nav-menu > ul > li > a {
   padding: 10px 15px;
-  color: #333333;
+  color: #444444;
 }
 .layout3.header-container .header .nav-container .horizontal-menu div.nav-menu > ul > li > a:before {
   display: none;
@@ -1357,7 +1357,7 @@ textarea {
 }
 .layout3.banner-home-content2 .banner-box h2 {
   font-family: 15px;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 .layout3.banner-home-content .banner-box {
   position: relative;
@@ -1416,7 +1416,7 @@ textarea {
 .layout3.banner-home-content .banner-box.banner-box2 .text h1 {
   font-size: 30px;
   text-transform: uppercase;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   margin-top: 115px;
 }
 .layout3.banner-home-content .banner-box.banner-box2 .text p {
@@ -1432,7 +1432,7 @@ textarea {
   color: #333;
 }
 .layout3.banner-home-content .banner-box.banner-box2 .text .shopnow:hover {
-  background: #94d6be;
+  background: #f1f1f1;
   color: #fff;
 }
 .layout3.modul-group .wpb_wrapper > h3 {
@@ -1480,7 +1480,7 @@ textarea {
   border: 2px solid #000;
   border-radius: 0;
   box-shadow: none;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: #000;
   font-size: 14px;
   font-weight: 400;
@@ -1501,10 +1501,10 @@ textarea {
 }
 .layout3 .shop-products .item-col .product-wrapper h2.product-name {
   font-size: 16px;
-  font-family: Carrois Gothic, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 .layout3 .shop-products .item-col .product-wrapper h2.product-name a:hover {
-  color: #94d6be;
+  color: #f1f1f1;
 }
 .layout3 .shop-products .item-col .product-wrapper .price-box {
   font-size: 16px;
@@ -1541,7 +1541,7 @@ textarea {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 .banner-scrolldown .text .button-container {
   margin-top: 30px;
@@ -1670,7 +1670,7 @@ textarea {
     margin-left: -150px;
   }
   .nav-container .mbmenu-toggler {
-    background: #94d6be;
+    background: #f1f1f1;
   }
   .layout3.header-container .header .logo {
     text-align: center;

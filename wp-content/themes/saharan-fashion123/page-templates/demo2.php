@@ -158,7 +158,6 @@ var road_testiscroll = <?php echo esc_js($road_opt['testiscroll'])==1 ? 'true': 
 					</div>
 				</div>
 			</div><!-- .header -->
-			<div class="clearfix"></div>
 		</div>
 		<div class="main-container">
 			<div class="page-content front-page">
