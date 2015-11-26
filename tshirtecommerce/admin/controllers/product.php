@@ -309,7 +309,6 @@ class Product extends Controllers
                         $content['products'][$count]['id_post']        = isset($post_id) ? $post_id : 0;
                          
                        
-                      
                          //end woocomerces
                 }
                 else{

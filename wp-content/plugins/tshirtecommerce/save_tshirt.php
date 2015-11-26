@@ -16,6 +16,7 @@ class LieisonTshirt {
      *@DIR      tshirtecommerce/admin/controllers/product.php 
      * ***/
     public function Save_WC($post) {
+        
 
         include $this->path . "wp-config.php";
 
@@ -57,8 +58,11 @@ class LieisonTshirt {
             return null;
         }
 
+        
+       
 
-
+        update_post_meta($post_id, '_vc_post_settings', 'a:1:{s:10:"vc_grid_id";a:0:{}}');
+        
         //WOOCOMMERCES INFORMACION IMPORTANTE 
         update_post_meta($post_id, '_visibility', 'hidden');
         update_post_meta($post_id, '_stock_status', 'instock');
@@ -92,18 +96,12 @@ class LieisonTshirt {
 
         
         //PRECIO DE VENTA
+        update_post_meta($post_id, '_regular_price', $post['price']);
+        update_post_meta($post_id, '_sale_price',$post['sale_price'] );
+        update_post_meta($post_id, '_price', $post['price']);
         
-     
-      
-        if( !empty($post['sale_price'])  && $post['sale_price'] != 0){
-             update_post_meta($post_id, '_regular_price', $post['price']);
-             update_post_meta($post_id, '_sale_price',$post['sale_price'] );
-        }
-        else
-        {
-               update_post_meta($post_id, '_price', $post['price']);
-        }
-
+        
+        update_post_meta($post_id, 'slide_template', "default");
        
         //WOOCOMMERCES NO HAY PIERDE ACA XD
         update_post_meta($post_id, '_sku', $post['sku']);
@@ -122,6 +120,8 @@ class LieisonTshirt {
         update_post_meta($post_id, '_stock', "");
 
         //FINALIZANDO ... 
+        
+         //update_post_meta($post_id, '_visibility', 'hidden');
 
         return $post_id;
     }
@@ -142,14 +142,9 @@ class LieisonTshirt {
         update_post_meta( $post_id, '_thumbnail_id', $post['image'] );
         
         
-        if( !empty($post['sale_price'])  && $post['sale_price'] != 0){
-             update_post_meta($post_id, '_regular_price', $post['price']);
-             update_post_meta($post_id, '_sale_price',$post['sale_price'] );
-        }
-        else
-        {
-               update_post_meta($post_id, '_price', $post['price']);
-        }
+        update_post_meta($post_id, '_regular_price', $post['price']);
+        update_post_meta($post_id, '_sale_price',$post['sale_price'] );
+        update_post_meta($post_id, '_price', $post['price']);
 
         return;
         
