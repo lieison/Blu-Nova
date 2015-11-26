@@ -115,7 +115,7 @@ class LieisonTshirt {
         update_post_meta($post_id, '_backorders', "no");
         update_post_meta($post_id, '_stock', "");
 
-        
+        //AGREGA UNA IMAGEN POR MEDIO DE URL ... 
         $image_id = $this->upload_image_from_url($post['image']);
          
         update_post_meta( $post_id, '_thumbnail_id', $image_id);
