@@ -301,6 +301,7 @@ var design={
 			}).done(function( data ) {
 				if (data != '')
 				{
+                                       // console.log(data);
 					if (typeof data.sale != 'undefined')
 					{
 						jQuery(document).triggerHandler( "price.addtocart.design", data);
@@ -2144,8 +2145,8 @@ var design={
                         
 			var txt = {};
 			
-			txt.text = 'Enter your text here';
-			txt.color = '#FF0000';
+			txt.text = 'Enter A Text';
+			txt.color = '#000000';
 			txt.fontSize = '20px';
 			txt.fontFamily = 'arial';
 			txt.stroke = 'none';
@@ -2278,8 +2279,10 @@ var design={
 			text.setAttributeNS(null, 'stroke-width', o.strokew);
 			text.setAttributeNS(null, 'stroke-linecap', 'round');
 			text.setAttributeNS(null, 'stroke-linejoin', 'round');
+                       
+                        
 			text.setAttributeNS(null, 'x', parseInt($width/2));
-			text.setAttributeNS(null, 'y', 20);				
+			text.setAttributeNS(null, 'y', 17);				
 			text.setAttributeNS(null, 'text-anchor', 'middle');				
 			text.setAttributeNS(null, 'font-size', o.fontSize);
 			text.setAttributeNS(null, 'font-family', o.fontFamily);
@@ -2820,8 +2823,28 @@ var design={
 			item.id 		= n;
 			jQuery(span).bind('click', function(){design.item.select(this)});
 			var center = this.align.center(item);
-			span.style.left = center.left + 'px';
-			span.style.top 	= center.top + 'px';
+                        
+                        /**
+                         * parche posicion de ¨texto e imagen
+                         * */
+                        //console.log(item);
+                        switch(item.type)
+                        {
+                            case "text":
+                                span.style.left = (center.left) + 'px';
+                                span.style.top 	= (center.top*1.95) + 'px';
+                                break;
+                            case "clipart":
+                                 span.style.left = (20) + 'px';
+                                 span.style.top  = (35) + 'px';
+                                 break;
+                            default:
+                                span.style.left = center.left + 'px';
+                                span.style.top 	= center.top + 'px';
+                                break;
+                        }
+                        
+			
 			span.style.width 	= item.width+'px';
 			span.style.height 	= item.height+'px';
 			

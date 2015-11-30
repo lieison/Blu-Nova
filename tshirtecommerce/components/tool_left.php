@@ -71,7 +71,7 @@ $addons = $GLOBALS['addons'];
                         <!-- edit text -->
                         <div class="row toolbar-action-text">
                             <div class="col-xs-12">
-                                <textarea class="form-control text-update" data-event="keyup" data-label="text" id="enter-text"></textarea>
+                                <textarea maxlength="25" class="form-control text-update" data-event="keyup" data-label="text" id="enter-text"></textarea>
                             </div>
                         </div>
 

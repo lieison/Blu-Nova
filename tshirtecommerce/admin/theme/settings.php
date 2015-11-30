@@ -16,9 +16,10 @@
 <link rel="stylesheet" href="<?php echo site_url_ci('assets/plugins/chosen/chosen.min.css'); ?>">
 
 <form method="post" action="<?php echo site_url_ci('index.php/settings'); ?>">
+<button class='btn btn-primary btn-xs' type='button' onclick='submit()'>Save</button>
 <ul class="nav nav-tabs">
   <li class="active"><a href="#home" data-toggle="tab"><?php lang('setting_tab_your_shop'); ?></a></li>
-  <li style="display:none;" ><a href="#price" data-toggle="tab"><?php lang('setting_tab_your_price'); ?></a></li>
+  <li style="display:inline;" ><a href="#price" data-toggle="tab"><?php lang('setting_tab_your_price'); ?></a></li>
   <li ><a href="#shop" data-toggle="tab"><?php lang('setting_tab_config'); ?></a></li>
   <li ><a href="#language" data-toggle="tab"><?php lang('setting_tab_settings_lang'); ?></a></li>
 

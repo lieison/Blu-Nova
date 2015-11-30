@@ -525,9 +525,9 @@ class dg{
 			$post 		= array(
 				'colors' 		=> $colors,
 				'print' 		=> $print,
-				'attribute' 	=> $attribute,
+				'attribute'             => $attribute,
 				'quantity' 		=> $quantity,
-				'product_id' 	=> $product_id					
+				'product_id'            => $product_id					
 			);
 			
 			// load setting			
