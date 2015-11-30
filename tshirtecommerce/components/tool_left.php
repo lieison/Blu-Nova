@@ -299,11 +299,11 @@ $addons = $GLOBALS['addons'];
         
             <div class="layers-toolbar">
                 <button type="button" class="btn btn-default">
-                    <i class="fa fa-long-arrow-down"></i>
-                    <i class="fa fa-long-arrow-up"></i>
+                    <i class="fa fa-angle-right"></i>
+                   
                 </button>
                 <button type="button" class="btn btn-default btn-sm">
-                    <i class="fa fa-angle-right"></i>						
+                    <i class="fa fa-angle-left"></i>						
                 </button>
             </div>
 
