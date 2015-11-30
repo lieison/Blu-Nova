@@ -81,6 +81,8 @@ var design={
                         $jd("#dg-popover").css("display" , "none");
                         
 		});
+                
+            
 		
 		/* share */
 		jQuery('.list-share span').click(function(){
@@ -1716,14 +1718,14 @@ var design={
                                 var is_mozilla = navigator.userAgent.search("Firefox") > -1;
                                 if(is_mozilla){
                                     
-                                    div.className = 'product-box col-xs-6 col-sm-4 col-md-4';
+                                    div.className = 'product-box col-xs-12 col-sm-12 col-md-12';
                                     html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
                                     div.innerHTML =  html;
                                     jQuery('#prod-data-scroll').append("<br>");
                                     jQuery('#prod-data-scroll').append( div);
                                 }
                                 else{
-                                    div.className = 'product-box col-xs-6 col-sm-4 col-md-12';
+                                    div.className = 'product-box col-xs-12 col-sm-12 col-md-12';
                                     html = '<div class="thumbnail"><img src="'+product.image+'" alt="'+product.title+'" class="img-responsive"> <div class="caption">' + product.title +'</div></div>';
                                     div.innerHTML = html;
                                     jQuery('#prod-data-scroll').append(div);

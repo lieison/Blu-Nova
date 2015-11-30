@@ -15,6 +15,7 @@ $addons = $GLOBALS['addons'];
     <!-- -->
 
     <div id="dg-left" class="width-100">
+        <div class="dg-box width-100 div-layers no-active">
         <div class="dg-box width-100">
             <div class="accordion">
 
@@ -59,15 +60,13 @@ $addons = $GLOBALS['addons'];
                     
                 </div>
 
-                
-
                 <h3 onclick="javascript:void(0)" class="add_item_text" >
                     <i class="fa fa-text-height"></i> <?php echo lang('designer_menu_add_text'); ?>
                 </h3>
 
                 <div id="dg-layers">
-                    <!-- ---------------------------------------------- -->
-                    <div  class="dg-options-content">
+                    <!-- --------------------CLASS dg-options-content-------------------------- -->
+                    <div  class="">
                         <!-- edit text -->
                         <div class="row toolbar-action-text">
                             <div class="col-xs-12">
@@ -178,14 +177,16 @@ $addons = $GLOBALS['addons'];
 
                     <!-- BOTON PARA AGREGAR TEXTO -->
                     <ul class="menu-left">
+                   
                         <li <?php echo cssShow($settings, 'show_add_text'); ?>>
                             <a href="javascript:void(0)" style="background-color:#601466;color:white;" class="add_item_text btn " title="">
-                                <?php echo lang('designer_menu_add_text'); ?>
+                                <h6><?php echo lang('designer_menu_add_text'); ?></h6>
                             </a>
+                           
                         </li>
                     </ul>
                     <!-- FINAL BOTON -->
-
+                   
                 </div>
 
                 <!-- AGREGANDO ARTES -->
@@ -295,7 +296,7 @@ $addons = $GLOBALS['addons'];
             </ul>
         </div>
 
-        <div class="dg-box width-100 div-layers no-active">
+        
             <div class="layers-toolbar">
                 <button type="button" class="btn btn-default">
                     <i class="fa fa-long-arrow-down"></i>
