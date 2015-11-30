@@ -449,7 +449,7 @@ var design={
 				
 				jQuery('#dg-mydesign').modal();
 				var div = jQuery('#dg-mydesign .modal-body');
-				div.addClass('loading');
+				div.addClass('loading ');
 				jQuery.ajax({
 					type: "POST",
 					url: siteURL + "ajax.php?type=userDesign",
@@ -1662,7 +1662,7 @@ var design={
                                      jQuery('.product-list').html("<br><div align='center'><b><img src='assets/images/ajax-loader.gif' ></b></div>");
                                 }
                                 else{
-                                     jQuery('.product-list').addClass('loading');
+                                     jQuery('.product-list').addClass('loading col-xs-12 col-sm-12 col-md-12');
                                 }
                                
                                 
